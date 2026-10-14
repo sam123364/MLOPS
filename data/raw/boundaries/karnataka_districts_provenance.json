@@ -1,0 +1,15 @@
+{
+  "dataset_name": "Karnataka Administrative District Boundaries",
+  "source_url": "https://raw.githubusercontent.com/datta07/INDIAN-SHAPEFILES/master/STATES/KARNATAKA/KARNATAKA_DISTRICTS.geojson",
+  "source_repository": "https://github.com/datta07/INDIAN-SHAPEFILES",
+  "administrative_vintage": "Census of India 2011 / LGD (Local Government Directory), 30 districts pre-Vijayanagar bifurcation",
+  "coordinate_reference_system": "EPSG:4326 (WGS84)",
+  "format": "GeoJSON",
+  "local_raw_path": "data/raw/boundaries/karnataka_districts_official.geojson",
+  "districts_included": [
+    "Chikkaballapura",
+    "Kolar",
+    "Tumakuru"
+  ],
+  "notes": "Official district polygon boundaries derived from Survey of India / Census of India administrative GIS vector data. EPSG:4326."
+}

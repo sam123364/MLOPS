@@ -1,7 +1,7 @@
 {
   "dataset_name": "IMD High-Resolution Daily Gridded Rainfall",
   "source_file": "imdweb_nSbYRBgK.nc",
-  "processing_timestamp_utc": "2026-10-14T12:01:08.718105+00:00",
+  "processing_timestamp_utc": "2026-10-14T12:21:22.316564+00:00",
   "time_coverage": {
     "start_date": "1901-01-31",
     "end_date": "2025-12-31",
