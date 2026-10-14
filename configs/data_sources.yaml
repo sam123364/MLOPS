@@ -1,0 +1,137 @@
+# =============================================================================
+# Data Sources Configuration
+# MLOps Rainwater Yield Estimation — Eastern Karnataka
+# =============================================================================
+
+# ── IMD Gridded Rainfall ─────────────────────────────────────────────────────
+imd:
+  source_url: "https://www.imdpune.gov.in/cmpg/Griddata/Rainfall_25_Bin.html"
+  resolution_deg: 0.25
+  resolution_label: "25km"
+  format: "binary"           # .bin files; use imdlib to parse
+  raw_dir: "data/raw/rainfall/imd"
+  interim_dir: "data/interim/rainfall/imd"
+  years_default: [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  variable: "rf"             # imdlib variable name for rainfall
+  description: >
+    IMD 0.25° daily gridded rainfall. Primary rainfall source for training
+    and backtesting the rainwater yield model.
+
+# ── CHIRPS Daily Rainfall ─────────────────────────────────────────────────────
+chirps:
+  source_url: "https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY"
+  gee_dataset_id: "UCSB-CHG/CHIRPS/DAILY"
+  resolution_deg: 0.05
+  resolution_label: "5km"
+  format: "GeoTIFF"          # accessed via Google Earth Engine or direct download
+  raw_dir: "data/raw/rainfall/chirps"
+  interim_dir: "data/interim/rainfall/chirps"
+  years_default: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+  band: "precipitation"
+  description: >
+    CHIRPS 0.05° daily rainfall. Used for spatial comparison with IMD
+    and gap-filling in cloud-prone periods.
+
+# ── KSNDMC / OpenCity Rainfall ───────────────────────────────────────────────
+ksndmc:
+  source_url: "https://data.opencity.in/dataset/karnataka-annual-rainfall-district-and-taluk"
+  format: "CSV"
+  raw_dir: "data/raw/rainfall/ksndmc"
+  interim_dir: "data/interim/rainfall/ksndmc"
+  description: >
+    District/taluk-level annual or daily rainfall from KSNDMC via OpenCity.
+    Used for local validation of IMD/CHIRPS gridded data.
+
+# ── CartoDEM ──────────────────────────────────────────────────────────────────
+cartodem:
+  source_url: "https://bhuvan-app3.nrsc.gov.in/data/download/"
+  resolution_m: 30
+  format: "GeoTIFF"
+  raw_dir: "data/raw/dem/cartodem"
+  interim_dir: "data/interim/dem"
+  description: >
+    CartoDEM 30m DEM from NRSC/Bhuvan. Primary terrain source for slope,
+    aspect, and flow-direction/accumulation analysis.
+
+# ── SRTM DEM (fallback) ───────────────────────────────────────────────────────
+srtm:
+  source_url: "https://earthexplorer.usgs.gov/"
+  resolution_m: 30
+  format: "GeoTIFF"
+  raw_dir: "data/raw/dem/srtm"
+  interim_dir: "data/interim/dem"
+  description: >
+    SRTM 30m DEM. Fallback if CartoDEM tiles unavailable. Also used for
+    cross-validation of terrain derivatives.
+
+# ── SoilGrids ─────────────────────────────────────────────────────────────────
+soilgrids:
+  api_base: "https://rest.soilgrids.org/soilgrids/v2.0/properties/query"
+  isric_files_base: "https://files.isric.org/soilgrids/latest/data/"
+  resolution_m: 250
+  raw_dir: "data/raw/soil/soilgrids"
+  interim_dir: "data/interim/soil"
+  properties:
+    - "clay"      # clay content (%)
+    - "sand"      # sand content (%)
+    - "silt"      # silt content (%)
+    - "bdod"      # bulk density
+    - "ocd"       # organic carbon density
+  depths:
+    - "0-5cm"
+    - "5-15cm"
+    - "15-30cm"
+  description: >
+    SoilGrids 250m global soil data. Used to derive Hydrologic Soil Groups
+    (A/B/C/D) for the SCS-CN runoff method.
+
+# ── Sentinel-2 ────────────────────────────────────────────────────────────────
+sentinel2:
+  source_url: "https://dataspace.copernicus.eu/browser/"
+  gee_dataset_id: "COPERNICUS/S2_SR_HARMONIZED"
+  resolution_m: 10
+  format: "GeoTIFF"
+  raw_dir: "data/raw/sentinel2"
+  interim_dir: "data/interim/sentinel2"
+  cloud_cover_max_pct: 20
+  seasons:
+    kharif:    # June–October
+      start_month: 6
+      end_month: 10
+    rabi:      # November–March
+      start_month: 11
+      end_month: 3
+    summer:    # April–May
+      start_month: 4
+      end_month: 5
+  bands:
+    - "B2"   # Blue
+    - "B3"   # Green
+    - "B4"   # Red
+    - "B8"   # NIR
+    - "B11"  # SWIR-1
+    - "B12"  # SWIR-2
+  derived_indices:
+    - "NDVI"
+    - "NDWI"
+    - "MNDWI"
+  description: >
+    Sentinel-2 10m multispectral imagery. Used for land-cover classification,
+    agricultural field delineation, vegetation monitoring, and water-body mapping.
+
+# ── NASA POWER (optional) ─────────────────────────────────────────────────────
+nasa_power:
+  api_base: "https://power.larc.nasa.gov/api/temporal/daily/point"
+  format: "JSON"
+  raw_dir: "data/raw/climate/nasa_power"
+  interim_dir: "data/interim/climate"
+  parameters:
+    - "T2M"       # Temperature at 2m
+    - "T2M_MAX"
+    - "T2M_MIN"
+    - "ALLSKY_SFC_SW_DWN"  # Surface solar radiation
+    - "RH2M"      # Relative humidity at 2m
+    - "WS2M"      # Wind speed at 2m
+  description: >
+    NASA POWER daily meteorological data. Used for FAO-56 Penman-Monteith
+    reference evapotranspiration (ET0) calculation.

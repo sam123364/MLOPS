@@ -1,0 +1,169 @@
+stages:
+
+  # ── Stage 1: Ingest IMD Rainfall ────────────────────────────────────────────
+  ingest_imd:
+    cmd: >
+      python -m src.ingestion.imd_rainfall
+      --year 2022
+      --save-nc
+    deps:
+      - src/ingestion/imd_rainfall.py
+      - src/utils/config.py
+      - configs/study_area.yaml
+      - configs/data_sources.yaml
+    outs:
+      - data/raw/rainfall/imd:
+          cache: true
+          persist: true
+    desc: "Download IMD 0.25° daily rainfall binary files and clip to Kolar district."
+
+  # ── Stage 2: Ingest CHIRPS Rainfall ─────────────────────────────────────────
+  ingest_chirps:
+    cmd: >
+      python -m src.ingestion.chirps_rainfall
+      --year 2022
+    deps:
+      - src/ingestion/chirps_rainfall.py
+      - src/utils/config.py
+      - configs/study_area.yaml
+      - configs/data_sources.yaml
+    outs:
+      - data/raw/rainfall/chirps:
+          cache: true
+          persist: true
+    desc: "Download and clip CHIRPS daily GeoTIFFs for 2022."
+
+  # ── Stage 3: Ingest SoilGrids ────────────────────────────────────────────────
+  ingest_soilgrids:
+    cmd: python -m src.ingestion.soilgrids_fetch
+    deps:
+      - src/ingestion/soilgrids_fetch.py
+      - src/utils/config.py
+      - configs/study_area.yaml
+      - configs/data_sources.yaml
+    outs:
+      - data/raw/soil/soilgrids/soilgrids_samples.jsonl:
+          cache: true
+    desc: "Sample SoilGrids REST API over Kolar bbox and save point data."
+
+  # ── Stage 4: Ingest NASA POWER (ET inputs) ──────────────────────────────────
+  ingest_nasa_power:
+    cmd: >
+      python -m src.ingestion.nasa_power_fetch
+      --year 2022
+    deps:
+      - src/ingestion/nasa_power_fetch.py
+      - src/utils/config.py
+      - configs/study_area.yaml
+      - configs/data_sources.yaml
+    outs:
+      - data/raw/climate:
+          cache: true
+          persist: true
+    desc: "Download NASA POWER daily meteorological data for ET0 calculation."
+
+  # ── Stage 5: Terrain Analysis ────────────────────────────────────────────────
+  terrain_analysis:
+    cmd: >
+      python -m src.preprocessing.terrain_analysis
+      --dem data/raw/dem/cartodem/kolar_dem.tif
+      --drain-threshold ${params.terrain.drainage_accumulation_threshold}
+    params:
+      - configs/params.yaml:
+          - terrain.drainage_accumulation_threshold
+    deps:
+      - src/preprocessing/terrain_analysis.py
+      - src/utils/config.py
+      - data/raw/dem/cartodem/kolar_dem.tif
+      - configs/params.yaml
+    outs:
+      - data/interim/dem/slope_deg.tif
+      - data/interim/dem/aspect_deg.tif
+      - data/interim/dem/flow_direction.tif
+      - data/interim/dem/flow_accumulation.tif
+      - data/interim/dem/drainage_lines.tif
+    desc: "Derive slope, aspect, flow direction/accumulation from CartoDEM."
+
+  # ── Stage 6: Soil HSG Derivation ─────────────────────────────────────────────
+  soil_hsg:
+    cmd: >
+      python -c "
+      from pathlib import Path;
+      from src.preprocessing.soil_hsg import process_soilgrids_jsonl;
+      process_soilgrids_jsonl(
+        Path('data/raw/soil/soilgrids/soilgrids_samples.jsonl'),
+        Path('data/interim/soil/hsg_points.csv')
+      )"
+    deps:
+      - src/preprocessing/soil_hsg.py
+      - data/raw/soil/soilgrids/soilgrids_samples.jsonl
+      - configs/params.yaml
+    outs:
+      - data/interim/soil/hsg_points.csv
+    desc: "Derive USDA Hydrologic Soil Groups from SoilGrids texture fractions."
+
+  # ── Stage 7: Build Feature Matrix ────────────────────────────────────────────
+  build_features:
+    cmd: python scripts/build_features.py
+    deps:
+      - scripts/build_features.py
+      - src/features/curve_number.py
+      - src/features/et_fao56.py
+      - data/interim/dem/slope_deg.tif
+      - data/interim/soil/hsg_points.csv
+      - data/raw/rainfall/imd
+      - configs/params.yaml
+    params:
+      - configs/params.yaml:
+          - curve_number.lambda_
+          - curve_number.default_amc
+          - yield_estimation.efficiency_factor
+    outs:
+      - data/processed/features.csv
+    desc: "Combine terrain, soil, LULC, and rainfall into a pixel-level feature matrix."
+
+  # ── Stage 8: Train Model ──────────────────────────────────────────────────────
+  train:
+    cmd: >
+      python -m src.models.train
+      --features data/processed/features.csv
+      --model-output-dir data/processed/models
+    params:
+      - configs/params.yaml:
+          - model.random_forest
+          - model.cv_folds
+          - model.features
+          - model.target
+    deps:
+      - src/models/train.py
+      - src/utils/config.py
+      - data/processed/features.csv
+      - configs/params.yaml
+    outs:
+      - data/processed/models/random_forest_model.joblib
+    metrics:
+      - reports/metrics.json:
+          cache: false
+    desc: "Train RandomForest model with MLflow tracking."
+
+  # ── Stage 9: Evaluate ─────────────────────────────────────────────────────────
+  evaluate:
+    cmd: >
+      python -m src.models.evaluate
+      --features data/processed/features.csv
+      --model data/processed/models/random_forest_model.joblib
+      --output-dir reports
+    deps:
+      - src/models/evaluate.py
+      - data/processed/features.csv
+      - data/processed/models/random_forest_model.joblib
+      - configs/params.yaml
+    metrics:
+      - reports/metrics.json:
+          cache: false
+    plots:
+      - reports/figures/predictions_vs_actual.csv:
+          cache: false
+          x: actual_runoff_mm
+          y: predicted_runoff_mm
+    desc: "Evaluate model, produce predictions and yield estimates."

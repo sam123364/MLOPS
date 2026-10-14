@@ -1,0 +1,177 @@
+# =============================================================================
+# Model & Pipeline Parameters
+# MLOps Rainwater Yield Estimation — Eastern Karnataka
+# =============================================================================
+
+# ── Runoff Estimation (SCS-CN Method) ────────────────────────────────────────
+curve_number:
+  # Default AMC (Antecedent Moisture Condition):
+  #   I  = dry  (5-day preceding rainfall < 35mm in kharif / < 12.5mm in rabi)
+  #   II = normal
+  #   III= wet  (5-day preceding rainfall > 53mm in kharif / > 28mm in rabi)
+  default_amc: "II"
+
+  # CN lookup by Hydrologic Soil Group (HSG) and land-cover class
+  # Based on USDA NRCS Part 630 Ch.9 with Karnataka-adjusted assumptions
+  cn_table:
+    cropland:
+      A: 67
+      B: 78
+      C: 85
+      D: 89
+    fallow:
+      A: 77
+      B: 86
+      C: 91
+      D: 94
+    scrubland:
+      A: 35
+      B: 56
+      C: 70
+      D: 77
+    forest:
+      A: 25
+      B: 55
+      C: 70
+      D: 77
+    waterbody:
+      A: 100
+      B: 100
+      C: 100
+      D: 100
+    settlement:
+      A: 77
+      B: 85
+      C: 90
+      D: 92
+    barren:
+      A: 72
+      B: 82
+      C: 87
+      D: 90
+
+  # Ia (initial abstraction) as fraction of S (potential max retention)
+  # Standard: 0.2; India studies suggest 0.1 is more realistic for semi-arid
+  lambda: 0.2
+
+  # Minimum rainfall threshold (mm) below which runoff is zero
+  min_rainfall_mm: 5.0
+
+# ── Hydrologic Soil Group (HSG) Mapping ──────────────────────────────────────
+soil_hsg:
+  # Derived from SoilGrids clay+sand+silt fractions
+  # Following USDA texture triangle → HSG assignment
+  # Clay content thresholds:
+  high_clay_threshold_pct: 40   # → Group D
+  low_clay_threshold_pct: 18    # boundary for B/C
+  sand_threshold_pct: 70        # → Group A (sandy soils)
+
+# ── Land Cover Classification ─────────────────────────────────────────────────
+lulc:
+  # NDVI thresholds for simple rule-based classification
+  ndvi_thresholds:
+    water: [-1.0, 0.0]
+    barren: [0.0, 0.1]
+    scrubland: [0.1, 0.3]
+    cropland: [0.3, 0.6]
+    forest: [0.6, 1.0]
+
+  # NDWI threshold for water body detection
+  ndwi_water_threshold: 0.0
+
+  # Number of classes for supervised classifier
+  n_classes: 6
+  class_labels:
+    0: "water"
+    1: "barren"
+    2: "scrubland"
+    3: "cropland"
+    4: "forest"
+    5: "settlement"
+
+  # Training/validation split for supervised classification
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+
+# ── Terrain Analysis ──────────────────────────────────────────────────────────
+terrain:
+  # Slope thresholds for suitability scoring
+  # Rainwater harvesting is most feasible at gentle slopes
+  slope_thresholds_deg:
+    very_flat: [0, 1]       # Check (too flat = poor drainage)
+    ideal: [1, 5]           # Best for farm ponds / check dams
+    moderate: [5, 10]       # Feasible with earthworks
+    steep: [10, 20]         # Difficult; may suit contour trenches
+    very_steep: [20, 999]   # Not suitable
+
+  # Flow accumulation cells threshold for drainage line identification
+  # (cell size 30m × 30m; adjust based on DEM resolution)
+  drainage_accumulation_threshold: 500
+
+# ── Evapotranspiration (FAO-56 Penman-Monteith) ───────────────────────────────
+et:
+  # Kc (crop coefficient) for dominant kharif crops in Kolar
+  # Source: FAO-56 Table 12 with Karnataka UASD recommendations
+  crop_kc:
+    groundnut:
+      kc_ini: 0.40
+      kc_mid: 1.15
+      kc_end: 0.60
+    ragi_finger_millet:
+      kc_ini: 0.35
+      kc_mid: 1.10
+      kc_end: 0.55
+    maize:
+      kc_ini: 0.30
+      kc_mid: 1.20
+      kc_end: 0.35
+    tomato:
+      kc_ini: 0.60
+      kc_mid: 1.15
+      kc_end: 0.70
+
+# ── Rainwater Yield Estimation ────────────────────────────────────────────────
+yield_estimation:
+  # Catchment efficiency factor (accounts for evap, seepage losses)
+  # Typical range: 0.6–0.85 for semi-arid Karnataka
+  efficiency_factor: 0.75
+
+  # Minimum catchment area (ha) to include in analysis
+  min_catchment_area_ha: 0.5
+
+  # Volume unit for output
+  volume_unit: "cubic_meters"
+
+# ── MLflow Tracking ───────────────────────────────────────────────────────────
+mlflow:
+  tracking_uri: "mlruns"          # local filesystem; change to remote URI for shared tracking
+  experiment_name: "rainwater_yield_kolar"
+  artifact_location: "mlruns/artifacts"
+
+# ── Model Training ────────────────────────────────────────────────────────────
+model:
+  # Target variable
+  target: "annual_runoff_mm"
+
+  # Features used by the ML regressor
+  features:
+    - "annual_rainfall_mm"
+    - "slope_deg"
+    - "curve_number"
+    - "soil_hsg"
+    - "lulc_class"
+    - "elevation_m"
+    - "ndvi_mean_kharif"
+
+  # Hyperparameters for default RandomForest baseline
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+    min_samples_leaf: 5
+    random_state: 42
+
+  # Cross-validation
+  cv_folds: 5
+  scoring_metric: "r2"

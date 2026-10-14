@@ -1,0 +1,63 @@
+# =============================================================================
+# Study Area Configuration
+# MLOps Rainwater Yield Estimation — Eastern Karnataka
+# =============================================================================
+
+# Active district (change to expand study area)
+active_district: "kolar"
+
+districts:
+  kolar:
+    name: "Kolar"
+    state: "Karnataka"
+    # Bounding box (WGS84 decimal degrees)
+    bbox:
+      west: 77.70
+      south: 12.90
+      east: 78.60
+      north: 13.90
+    # District centroid (approx.)
+    centroid:
+      lat: 13.13
+      lon: 78.13
+    crs: "EPSG:4326"
+    utm_crs: "EPSG:32643"   # UTM Zone 43N for metric calculations
+
+  chikkaballapur:
+    name: "Chikkaballapur"
+    bbox:
+      west: 77.55
+      south: 13.20
+      east: 78.20
+      north: 13.90
+    centroid:
+      lat: 13.43
+      lon: 77.73
+    crs: "EPSG:4326"
+    utm_crs: "EPSG:32643"
+
+  bengaluru_rural:
+    name: "Bengaluru Rural"
+    bbox:
+      west: 77.20
+      south: 12.75
+      east: 77.80
+      north: 13.45
+    centroid:
+      lat: 13.02
+      lon: 77.52
+    crs: "EPSG:4326"
+    utm_crs: "EPSG:32643"
+
+  tumakuru:
+    name: "Tumakuru"
+    bbox:
+      west: 76.60
+      south: 12.90
+      east: 77.60
+      north: 14.10
+    centroid:
+      lat: 13.34
+      lon: 77.10
+    crs: "EPSG:4326"
+    utm_crs: "EPSG:32643"
