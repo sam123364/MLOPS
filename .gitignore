@@ -32,12 +32,14 @@ env/
 Thumbs.db
 desktop.ini
 
-# DVC — data is versioned by DVC, not Git
+# DVC / Data Tracking — whitelisting analysis-ready datasets for team access
 /data/raw/*
 !/data/raw/boundaries/
 /data/interim/
 /data/processed/*
-!/data/processed/ksndmc_flagged_records.csv
+!/data/processed/*.parquet
+!/data/processed/*.csv
+!/data/processed/rainfall/
 /data/external/
 *.dvc
 !.dvcignore

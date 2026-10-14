@@ -1,0 +1,1123 @@
+year,admin_level,district_name,taluk_name,location_name,annual_normal_mm,annual_actual_mm,annual_dep_pct,annual_classification
+2024,DISTRICT,Bengaluru Urban,,Bengaluru Urban,845.6,933.8,10,Normal
+2024,TALUK,Bengaluru Urban,Anekal,Anekal,901.6,933.8,4,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Anekal_1,901.6,866.5,-4,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Attibele_1,823.5,970.5,18,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Jigani_1,844.8,900.4,7,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Sarjapura_1,747.8,929.3,24,Excess
+2024,HOBLI,Bengaluru Urban,Anekal,Anekal_2,880.9,937.5,6,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Jigani_2,865.0,969.0,12,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Attibele_2,856.8,941.3,10,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Sarjapura_1,855.0,959.4,12,Normal
+2024,HOBLI,Bengaluru Urban,Anekal,Sarjapura_3,813.6,994.3,22,Excess
+2024,TALUK,Bengaluru Urban,Bengaluru North,Bengaluru North,1004.6,969.2,-4,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Bengaluru North_1,1004.6,869.3,-13,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Dasanapura_1,895.6,884.6,-1,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Yashavantapura_1,819.0,1031.4,26,Excess
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Bengaluru North_2,854.2,950.0,11,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Yashavantapura_2,865.7,1081.6,25,Excess
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Dasanapura_2,872.2,1079.2,24,Excess
+2024,HOBLI,Bengaluru Urban,Bengaluru North,Dasanapura_3,899.8,1019.1,13,Normal
+2024,TALUK,Bengaluru Urban,Bengaluru South,Bengaluru South,819.5,913.3,11,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Beguru_3,819.5,818.0,0,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Kengeri_1,905.4,1036.0,14,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Tavarekere_1,734.4,1096.7,49,Excess
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Uttarahalli_4,904.7,1147.4,27,Excess
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Uttarahalli_1,885.8,780.7,-12,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Uttarahalli_2,872.1,848.2,-3,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Uttarahalli_3,862.6,682.5,-21,Deficient
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Uttarahalli_5,941.1,964.2,2,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Beguru_1,912.3,832.2,-9,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Beguru_2,875.0,892.7,2,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Kengeri_2,877.9,932.0,6,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Kengeri_3,860.1,869.1,1,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Kengeri_4,851.5,1235.0,45,Excess
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Tavarekere_2,961.0,790.3,-18,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru South,Tavarekere_3,870.6,1012.4,16,Normal
+2024,TALUK,Bengaluru Urban,Bengaluru East,Bengaluru East,814.5,817.1,0,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Mahadevpura_1,814.5,532.0,-35,Deficient
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Bidarahalli_2,828.0,821.5,-1,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Varturu_1,817.9,911.6,11,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,K R Pura_2,855.2,765.7,-10,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,K R Pura_3,827.4,683.7,-17,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Varturu_2,881.1,761.2,-14,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Bidarahalli_1,820.6,896.6,9,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Mahadevapura_2,882.2,506.9,-43,Deficient
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Marathahalli,891.5,930.2,4,Normal
+2024,HOBLI,Bengaluru Urban,Bengaluru East,Bidharahalli_3,798.7,1089.9,36,Excess
+2024,TALUK,Bengaluru Urban,Yelahanka,Yelahanka,751.6,1022.2,36,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Yelahanka_1,751.6,1157.9,54,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Yelahanka_2,785.4,1040.7,33,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Yelahanka_3,800.6,1128.3,41,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Jala_1,760.1,873.8,15,Normal
+2024,HOBLI,Bengaluru Urban,Yelahanka,Jala_2,763.4,976.7,28,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Jala_3,781.4,970.3,24,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Hesarughatta_1,746.1,1007.1,35,Excess
+2024,HOBLI,Bengaluru Urban,Yelahanka,Hesarughatta_2,780.6,1028.7,32,Excess
+2024,DISTRICT,Bengaluru Rural,,Bengaluru Rural,798.5,883.5,11,Normal
+2024,TALUK,Bengaluru Rural,Devanahalli,Devanahalli,808.5,813.2,1,Normal
+2024,HOBLI,Bengaluru Rural,Devanahalli,Devanahalli,808.5,910.1,13,Normal
+2024,HOBLI,Bengaluru Rural,Devanahalli,Channarayapatna,796.3,741.3,-7,Normal
+2024,HOBLI,Bengaluru Rural,Devanahalli,Kundana,786.3,777.7,-1,Normal
+2024,HOBLI,Bengaluru Rural,Devanahalli,Vijaypura,786.9,815.2,4,Normal
+2024,TALUK,Bengaluru Rural,Doddaballapura,Doddaballapura,799.0,951.0,19,Normal
+2024,HOBLI,Bengaluru Rural,Doddaballapura,Dodballapur,799.0,844.5,6,Normal
+2024,HOBLI,Bengaluru Rural,Doddaballapura,Dodda Belavangala,791.9,960.6,21,Excess
+2024,HOBLI,Bengaluru Rural,Doddaballapura,Madure,812.5,879.8,8,Normal
+2024,HOBLI,Bengaluru Rural,Doddaballapura,Sasalu,710.0,975.5,37,Excess
+2024,HOBLI,Bengaluru Rural,Doddaballapura,Tubagere,787.0,1040.7,32,Excess
+2024,TALUK,Bengaluru Rural,Hosakote,Hosakote,856.9,756.7,-12,Normal
+2024,HOBLI,Bengaluru Rural,Hosakote,Hosakote,856.9,894.0,4,Normal
+2024,HOBLI,Bengaluru Rural,Hosakote,Anugondhalli,731.3,705.6,-4,Normal
+2024,HOBLI,Bengaluru Rural,Hosakote,Jadigenhalli,795.7,808.3,2,Normal
+2024,HOBLI,Bengaluru Rural,Hosakote,Nandagudi,777.3,665.5,-14,Normal
+2024,HOBLI,Bengaluru Rural,Hosakote,Sulibele,802.8,731.2,-9,Normal
+2024,TALUK,Bengaluru Rural,Nelamangala,Nelamangala,954.3,979.7,3,Normal
+2024,HOBLI,Bengaluru Rural,Nelamangala,Nelamangala,954.3,1025.3,7,Normal
+2024,HOBLI,Bengaluru Rural,Nelamangala,Sompura,794.5,953.8,20,Excess
+2024,HOBLI,Bengaluru Rural,Nelamangala,Tyamagondal,877.0,875.9,0,Normal
+2024,HOBLI,Bengaluru Rural,Nelamangala,Nelamangala_2,890.8,1013.4,14,Normal
+2024,HOBLI,Bengaluru Rural,Nelamangala,Sompura_2,827.0,878.8,6,Normal
+2024,HOBLI,Bengaluru Rural,Nelamangala,Tyamagondal_2,869.8,1032.6,19,Normal
+2024,DISTRICT,Ramanagara,,Ramanagara,840.1,877.9,4,Normal
+2024,TALUK,Ramanagara,Channapatna,Channapatna,861.4,797.2,-7,Normal
+2024,HOBLI,Ramanagara,Channapatna,Channapatna,861.4,840.6,-2,Normal
+2024,HOBLI,Ramanagara,Channapatna,Maluru,843.4,760.3,-10,Normal
+2024,HOBLI,Ramanagara,Channapatna,Virupakshipura,843.5,799.8,-5,Normal
+2024,TALUK,Ramanagara,Kanakapura,Kanakapura,797.0,781.7,-2,Normal
+2024,HOBLI,Ramanagara,Kanakapura,Kanakapura,797.0,796.8,0,Normal
+2024,HOBLI,Ramanagara,Kanakapura,Kodihalli,802.6,961.0,20,Excess
+2024,HOBLI,Ramanagara,Kanakapura,Satnuru,798.6,603.6,-24,Deficient
+2024,HOBLI,Ramanagara,Kanakapura,Uyyamballi,792.5,741.2,-6,Normal
+2024,TALUK,Ramanagara,Magadi,Magadi,1000.6,1141.0,14,Normal
+2024,HOBLI,Ramanagara,Magadi,Magadi,1000.6,1201.3,20,Excess
+2024,HOBLI,Ramanagara,Magadi,Kuduru,841.2,1167.8,39,Excess
+2024,HOBLI,Ramanagara,Magadi,Madabal,968.7,1024.6,6,Normal
+2024,HOBLI,Ramanagara,Magadi,Solur,881.1,1185.4,35,Excess
+2024,HOBLI,Ramanagara,Magadi,Tippasanara,822.3,1132.2,38,Excess
+2024,TALUK,Ramanagara,Ramanagara,Ramanagara,921.5,893.9,-3,Normal
+2024,HOBLI,Ramanagara,Ramanagara,Ramanagara_1,921.5,841.1,-9,Normal
+2024,HOBLI,Ramanagara,Ramanagara,Bidadi,865.6,855.5,-1,Normal
+2024,HOBLI,Ramanagara,Ramanagara,Kailancha,867.5,930.0,7,Normal
+2024,HOBLI,Ramanagara,Ramanagara,Kutgallu,887.6,882.2,-1,Normal
+2024,HOBLI,Ramanagara,Ramanagara,Ramanagara_2,889.4,969.0,9,Normal
+2024,HOBLI,Ramanagara,Ramanagara,Kailancha_2,871.7,948.4,9,Normal
+2024,TALUK,Ramanagara,Harohalli,Harohalli,845.5,735.6,-13,Normal
+2024,HOBLI,Ramanagara,Harohalli,Harohalli,845.5,618.1,-27,Deficient
+2024,HOBLI,Ramanagara,Harohalli,Dodda Maralavadi,828.6,797.2,-4,Normal
+2024,DISTRICT,Kolar,,Kolar,735.2,780.3,6,Normal
+2024,TALUK,Kolar,Bangarapet,Bangarapet,764.3,787.5,3,Normal
+2024,HOBLI,Kolar,Bangarapet,Bangarapet,764.3,728.1,-5,Normal
+2024,HOBLI,Kolar,Bangarapet,Budikote,687.1,731.4,6,Normal
+2024,HOBLI,Kolar,Bangarapet,Kamsandra,778.0,832.7,7,Normal
+2024,HOBLI,Kolar,Bangarapet,Robertsonpet,818.2,921.6,13,Normal
+2024,TALUK,Kolar,Kolar,Kolar,783.6,655.4,-16,Normal
+2024,HOBLI,Kolar,Kolar,Kolar,783.6,562.6,-28,Deficient
+2024,HOBLI,Kolar,Kolar,Holuru,744.7,779.5,5,Normal
+2024,HOBLI,Kolar,Kolar,Huttur,768.4,669.5,-13,Normal
+2024,HOBLI,Kolar,Kolar,Narasapura,753.0,555.1,-26,Deficient
+2024,HOBLI,Kolar,Kolar,Sugaturu,763.3,674.1,-12,Normal
+2024,HOBLI,Kolar,Kolar,Vakkaleri,737.7,643.8,-13,Normal
+2024,HOBLI,Kolar,Kolar,Rajakallahalli Vemagal,758.6,666.0,-12,Normal
+2024,TALUK,Kolar,Malur,Malur,798.4,766.8,-4,Normal
+2024,HOBLI,Kolar,Malur,Malur,798.4,683.7,-14,Normal
+2024,HOBLI,Kolar,Malur,Lakkur,528.8,836.9,58,Excess
+2024,HOBLI,Kolar,Malur,Masathi,632.6,809.2,28,Excess
+2024,HOBLI,Kolar,Malur,Tyakal,649.2,787.8,21,Excess
+2024,TALUK,Kolar,Mulabagilu,Mulabagilu,803.8,807.9,1,Normal
+2024,HOBLI,Kolar,Mulabagilu,Mulbagal,803.8,744.9,-7,Normal
+2024,HOBLI,Kolar,Mulabagilu,Avani,775.4,806.4,4,Normal
+2024,HOBLI,Kolar,Mulabagilu,Bairakur,734.2,943.1,28,Excess
+2024,HOBLI,Kolar,Mulabagilu,Duggasandra,752.5,767.8,2,Normal
+2024,HOBLI,Kolar,Mulabagilu,Tayilur,708.1,762.7,8,Normal
+2024,TALUK,Kolar,Srinivasapura,Srinivasapura,757.6,800.3,6,Normal
+2024,HOBLI,Kolar,Srinivasapura,Srinivasapura,757.6,807.2,7,Normal
+2024,HOBLI,Kolar,Srinivasapura,Nelavanki,664.2,801.7,21,Excess
+2024,HOBLI,Kolar,Srinivasapura,Ronuru,711.0,883.5,24,Excess
+2024,HOBLI,Kolar,Srinivasapura,Rayalpadu,639.4,771.7,21,Excess
+2024,HOBLI,Kolar,Srinivasapura,Yelldur,710.3,734.0,3,Normal
+2024,TALUK,Kolar,K.G.F,K.G.F,889.8,954.2,7,Normal
+2024,HOBLI,Kolar,K.G.F,Betamangala,797.3,914.6,15,Normal
+2024,HOBLI,Kolar,K.G.F,Kyasamballi,784.9,968.9,23,Excess
+2024,HOBLI,Kolar,K.G.F,Robertsonpet,889.8,1019.8,15,Normal
+2024,DISTRICT,Chikkaballapura,,Chikkaballapura,736.0,755.3,3,Normal
+2024,TALUK,Chikkaballapura,Bagepalli,Bagepalli,695.4,740.6,7,Normal
+2024,HOBLI,Chikkaballapura,Bagepalli,Bagepalli,695.4,827.1,19,Normal
+2024,HOBLI,Chikkaballapura,Bagepalli,Chelur,706.4,766.2,8,Normal
+2024,HOBLI,Chikkaballapura,Bagepalli,Guluru,696.4,740.2,6,Normal
+2024,HOBLI,Chikkaballapura,Bagepalli,Mittemari,715.3,786.1,10,Normal
+2024,HOBLI,Chikkaballapura,Bagepalli,Pathapalya,701.3,630.6,-10,Normal
+2024,TALUK,Chikkaballapura,Chikkaballapura,Chikkaballapura,828.4,818.7,-1,Normal
+2024,HOBLI,Chikkaballapura,Chikkaballapura,Chikballapura,828.4,828.9,0,Normal
+2024,HOBLI,Chikkaballapura,Chikkaballapura,Mandikal,723.1,792.4,10,Normal
+2024,HOBLI,Chikkaballapura,Chikkaballapura,Nandi,807.9,835.8,3,Normal
+2024,TALUK,Chikkaballapura,Chintamani,Chintamani,787.4,704.2,-11,Normal
+2024,HOBLI,Chikkaballapura,Chintamani,Chintamani,787.4,732.5,-7,Normal
+2024,HOBLI,Chikkaballapura,Chintamani,Ambajidurga,768.4,661.8,-14,Normal
+2024,HOBLI,Chikkaballapura,Chintamani,Chilakalanerpu,722.6,689.4,-5,Normal
+2024,HOBLI,Chikkaballapura,Chintamani,Kaiwara,736.2,733.3,0,Normal
+2024,HOBLI,Chikkaballapura,Chintamani,Munganahalli,730.2,699.3,-4,Normal
+2024,HOBLI,Chikkaballapura,Chintamani,Murugamale,749.0,724.7,-3,Normal
+2024,TALUK,Chikkaballapura,Gauribidanur,Gauribidanur,704.7,851.5,21,Excess
+2024,HOBLI,Chikkaballapura,Gauribidanur,Gauribidanur,704.7,809.2,15,Normal
+2024,HOBLI,Chikkaballapura,Gauribidanur,D.Palya,713.2,699.8,-2,Normal
+2024,HOBLI,Chikkaballapura,Gauribidanur,Hosur,709.9,919.6,30,Excess
+2024,HOBLI,Chikkaballapura,Gauribidanur,Manchenahalli,786.2,797.4,1,Normal
+2024,HOBLI,Chikkaballapura,Gauribidanur,Nagaragere,695.4,885.2,27,Excess
+2024,HOBLI,Chikkaballapura,Gauribidanur,Tondebavi,758.6,990.7,31,Excess
+2024,TALUK,Chikkaballapura,Gudibanda,Gudibanda,694.0,728.3,5,Normal
+2024,HOBLI,Chikkaballapura,Gudibanda,Gudibanda,694.0,778.1,12,Normal
+2024,HOBLI,Chikkaballapura,Gudibanda,Somenahalli,728.0,675.4,-7,Normal
+2024,TALUK,Chikkaballapura,Sidlaghatta,Sidlaghatta,763.5,665.6,-13,Normal
+2024,HOBLI,Chikkaballapura,Sidlaghatta,Sidlaghatta,763.5,663.0,-13,Normal
+2024,HOBLI,Chikkaballapura,Sidlaghatta,Bashattahalli,765.1,711.2,-7,Normal
+2024,HOBLI,Chikkaballapura,Sidlaghatta,Jangamakote,776.0,665.0,-14,Normal
+2024,HOBLI,Chikkaballapura,Sidlaghatta,Sadali,735.2,622.0,-15,Normal
+2024,DISTRICT,Tumakuru,,Tumakuru,669.2,1015.8,52,Excess
+2024,TALUK,Tumakuru,Chikkanayakanahalli,Chikkanayakanahalli,760.7,1006.5,32,Excess
+2024,HOBLI,Tumakuru,Chikkanayakanahalli,Chiknayakanahalli,760.7,1092.6,44,Excess
+2024,HOBLI,Tumakuru,Chikkanayakanahalli,Handanakere,594.7,948.6,60,Large Excess
+2024,HOBLI,Tumakuru,Chikkanayakanahalli,Huliyaru,504.1,997.2,98,Large Excess
+2024,HOBLI,Tumakuru,Chikkanayakanahalli,Kandikere,609.7,1024.1,68,Large Excess
+2024,HOBLI,Tumakuru,Chikkanayakanahalli,Shettikeri,700.2,1041.7,49,Excess
+2024,TALUK,Tumakuru,Gubbi,Gubbi,809.4,1147.4,42,Excess
+2024,HOBLI,Tumakuru,Gubbi,Gubbi,809.4,1295.2,60,Large Excess
+2024,HOBLI,Tumakuru,Gubbi,Chandrashekerapura,691.9,1002.9,45,Excess
+2024,HOBLI,Tumakuru,Gubbi,Chelur,729.5,1161.4,59,Excess
+2024,HOBLI,Tumakuru,Gubbi,Hagalavadi,655.0,1096.5,67,Large Excess
+2024,HOBLI,Tumakuru,Gubbi,Kadaba,787.1,1143.7,45,Excess
+2024,HOBLI,Tumakuru,Gubbi,Nittur,789.2,1149.4,46,Excess
+2024,TALUK,Tumakuru,Koratagere,Koratagere,778.8,1133.3,46,Excess
+2024,HOBLI,Tumakuru,Koratagere,Koratagere,778.8,1194.0,53,Excess
+2024,HOBLI,Tumakuru,Koratagere,Chennarayadurga,787.4,1107.4,41,Excess
+2024,HOBLI,Tumakuru,Koratagere,Holanahalli,767.9,1198.6,56,Excess
+2024,HOBLI,Tumakuru,Koratagere,Kolala,721.3,1055.9,46,Excess
+2024,TALUK,Tumakuru,Kunigal,Kunigal,824.9,931.5,13,Normal
+2024,HOBLI,Tumakuru,Kunigal,Kunigal,824.9,951.0,15,Normal
+2024,HOBLI,Tumakuru,Kunigal,Amrutur,675.4,920.0,36,Excess
+2024,HOBLI,Tumakuru,Kunigal,Huliyurudurga,741.5,899.5,21,Excess
+2024,HOBLI,Tumakuru,Kunigal,Huttariduraga,799.3,1071.2,34,Excess
+2024,HOBLI,Tumakuru,Kunigal,Kottagere,752.4,985.6,31,Excess
+2024,HOBLI,Tumakuru,Kunigal,Yedeyur,668.9,835.4,25,Excess
+2024,TALUK,Tumakuru,Madhugiri,Madhugiri,730.3,1034.8,42,Excess
+2024,HOBLI,Tumakuru,Madhugiri,Madhugiri,730.3,1129.4,55,Excess
+2024,HOBLI,Tumakuru,Madhugiri,Dodderi,594.3,1084.7,83,Large Excess
+2024,HOBLI,Tumakuru,Madhugiri,Itakadibbanahalli,615.7,966.2,57,Excess
+2024,HOBLI,Tumakuru,Madhugiri,Kodigenahalli,631.6,911.5,44,Excess
+2024,HOBLI,Tumakuru,Madhugiri,Midigesi,553.4,1009.9,82,Large Excess
+2024,HOBLI,Tumakuru,Madhugiri,Puravara,673.6,1114.8,66,Large Excess
+2024,TALUK,Tumakuru,Pavagada,Pavagada,611.6,873.8,43,Excess
+2024,HOBLI,Tumakuru,Pavagada,Pavagada,611.6,901.6,47,Excess
+2024,HOBLI,Tumakuru,Pavagada,Nagalamadike,587.7,797.8,36,Excess
+2024,HOBLI,Tumakuru,Pavagada,Nidagal,518.0,971.6,88,Large Excess
+2024,HOBLI,Tumakuru,Pavagada,Yellappanayakana Hosakote,532.0,853.8,60,Large Excess
+2024,TALUK,Tumakuru,Sira,Sira,637.7,908.5,42,Excess
+2024,HOBLI,Tumakuru,Sira,Sira,637.7,863.8,35,Excess
+2024,HOBLI,Tumakuru,Sira,Bukkaptna,579.1,973.9,68,Large Excess
+2024,HOBLI,Tumakuru,Sira,Gowdagere,580.6,750.1,29,Excess
+2024,HOBLI,Tumakuru,Sira,Hulikunta,505.8,986.2,95,Large Excess
+2024,HOBLI,Tumakuru,Sira,Kallambella,606.0,987.9,63,Large Excess
+2024,TALUK,Tumakuru,Tiptur,Tiptur,731.2,1019.5,39,Excess
+2024,HOBLI,Tumakuru,Tiptur,Tiptur,731.2,951.8,30,Excess
+2024,HOBLI,Tumakuru,Tiptur,Honnavalli,705.6,1010.5,43,Excess
+2024,HOBLI,Tumakuru,Tiptur,Kibbanahalli,607.6,1085.6,79,Large Excess
+2024,HOBLI,Tumakuru,Tiptur,Nonavinakere,719.8,1053.5,46,Excess
+2024,TALUK,Tumakuru,Tumakuru,Tumakuru,830.8,1178.8,42,Excess
+2024,HOBLI,Tumakuru,Tumakuru,Tumakuru North,830.8,1244.5,50,Excess
+2024,HOBLI,Tumakuru,Tumakuru,Bellavi,788.1,1305.6,66,Large Excess
+2024,HOBLI,Tumakuru,Tumakuru,Guluru,869.3,1091.3,26,Excess
+2024,HOBLI,Tumakuru,Tumakuru,Hebbur,678.0,983.3,45,Excess
+2024,HOBLI,Tumakuru,Tumakuru,Uradigere,683.3,1211.0,77,Large Excess
+2024,HOBLI,Tumakuru,Tumakuru,Kora,788.4,1306.8,66,Large Excess
+2024,HOBLI,Tumakuru,Tumakuru,Tumakuru East,844.2,1381.1,64,Large Excess
+2024,HOBLI,Tumakuru,Tumakuru,Tumakuru West,839.5,1158.5,38,Excess
+2024,HOBLI,Tumakuru,Tumakuru,Tumakuru South,846.3,1117.9,32,Excess
+2024,TALUK,Tumakuru,Turuvekere,Turuvekere,772.2,1038.2,34,Excess
+2024,HOBLI,Tumakuru,Turuvekere,Turuvekere,772.2,1010.6,31,Excess
+2024,HOBLI,Tumakuru,Turuvekere,Dabbegatta,606.2,1019.3,68,Large Excess
+2024,HOBLI,Tumakuru,Turuvekere,Dandinasivara,707.3,1077.7,52,Excess
+2024,HOBLI,Tumakuru,Turuvekere,Mayasandra,657.0,1051.9,60,Large Excess
+2024,DISTRICT,Chitradurga,,Chitradurga,540.1,697.9,29,Excess
+2024,TALUK,Chitradurga,Challakere,Challakere,484.5,736.8,52,Excess
+2024,HOBLI,Chitradurga,Challakere,Challakere,484.5,574.8,19,Normal
+2024,HOBLI,Chitradurga,Challakere,Nayakanahatti,427.7,985.0,130,Large Excess
+2024,HOBLI,Chitradurga,Challakere,Parasurampura,410.3,799.3,95,Large Excess
+2024,HOBLI,Chitradurga,Challakere,Thalku,391.7,641.7,64,Large Excess
+2024,TALUK,Chitradurga,Chitradurga,Chitradurga,665.5,747.9,12,Normal
+2024,HOBLI,Chitradurga,Chitradurga,Chitradurga,665.5,688.6,3,Normal
+2024,HOBLI,Chitradurga,Chitradurga,Bharmasagara,601.4,810.6,35,Excess
+2024,HOBLI,Chitradurga,Chitradurga,Hire Guntanur,576.0,889.2,54,Excess
+2024,HOBLI,Chitradurga,Chitradurga,Turuvanur,580.6,676.7,17,Normal
+2024,TALUK,Chitradurga,Hiriyur,Hiriyur,578.2,604.3,5,Normal
+2024,HOBLI,Chitradurga,Hiriyur,Hiriyur,578.2,640.0,11,Normal
+2024,HOBLI,Chitradurga,Hiriyur,Aymangala,516.7,549.7,6,Normal
+2024,HOBLI,Chitradurga,Hiriyur,Dharmapura,480.5,668.4,39,Excess
+2024,HOBLI,Chitradurga,Hiriyur,Javanagondanahalli,562.1,579.7,3,Normal
+2024,TALUK,Chitradurga,Holalkere,Holalkere,722.0,632.4,-12,Normal
+2024,HOBLI,Chitradurga,Holalkere,Holalkere,722.0,647.7,-10,Normal
+2024,HOBLI,Chitradurga,Holalkere,Bharmanaikanadurga,647.7,601.7,-7,Normal
+2024,HOBLI,Chitradurga,Holalkere,Ramagiri,535.1,688.1,29,Excess
+2024,HOBLI,Chitradurga,Holalkere,Talya,650.3,601.5,-8,Normal
+2024,TALUK,Chitradurga,Hosadurga,Hosadurga,647.7,818.6,26,Excess
+2024,HOBLI,Chitradurga,Hosadurga,Hosadurga,647.7,837.6,29,Excess
+2024,HOBLI,Chitradurga,Hosadurga,Madadhakeri,572.8,745.6,30,Excess
+2024,HOBLI,Chitradurga,Hosadurga,Mathodu,580.2,847.6,46,Excess
+2024,HOBLI,Chitradurga,Hosadurga,Srirampura,564.3,869.4,54,Excess
+2024,TALUK,Chitradurga,Molakalmuru,Molakalmuru,545.0,575.4,6,Normal
+2024,HOBLI,Chitradurga,Molakalmuru,Molakalmuru,545.0,501.9,-8,Normal
+2024,HOBLI,Chitradurga,Molakalmuru,Devasamudra,400.3,658.1,64,Large Excess
+2024,DISTRICT,Davanagere,,Davanagere,659.0,952.4,45,Excess
+2024,TALUK,Davanagere,Channagiri,Channagiri,840.1,908.5,8,Normal
+2024,HOBLI,Davanagere,Channagiri,Channagiri,840.1,948.3,13,Normal
+2024,HOBLI,Davanagere,Channagiri,Basavapatna_1,703.4,910.8,29,Excess
+2024,HOBLI,Davanagere,Channagiri,Basavapatna_2,681.9,812.0,19,Normal
+2024,HOBLI,Davanagere,Channagiri,Santebannur_1,710.2,874.4,23,Excess
+2024,HOBLI,Davanagere,Channagiri,Santebannur_2,741.0,847.4,14,Normal
+2024,HOBLI,Davanagere,Channagiri,Ubrani,751.6,943.5,26,Excess
+2024,TALUK,Davanagere,Davanagere,Davanagere,641.3,956.3,49,Excess
+2024,HOBLI,Davanagere,Davanagere,Davangere,641.3,934.3,46,Excess
+2024,HOBLI,Davanagere,Davanagere,Anogodu,598.8,975.2,63,Large Excess
+2024,HOBLI,Davanagere,Davanagere,Mayakonda,638.9,958.7,50,Excess
+2024,TALUK,Davanagere,Harihara,Harihara,630.1,868.3,38,Excess
+2024,HOBLI,Davanagere,Harihara,Harihara,630.1,820.8,30,Excess
+2024,HOBLI,Davanagere,Harihara,Malebennur,586.3,907.5,55,Excess
+2024,TALUK,Davanagere,Honnali,Honnali,661.6,954.6,44,Excess
+2024,HOBLI,Davanagere,Honnali,Honnali,661.6,946.4,43,Excess
+2024,HOBLI,Davanagere,Honnali,Govinakovi_2,667.2,881.2,32,Excess
+2024,HOBLI,Davanagere,Honnali,Sasavehalli_1,719.3,1053.4,46,Excess
+2024,HOBLI,Davanagere,Honnali,Sasavehalli_2,640.3,890.0,39,Excess
+2024,TALUK,Davanagere,Jagalur,Jagalur,527.7,994.4,88,Large Excess
+2024,HOBLI,Davanagere,Jagalur,Jagalur,527.7,1051.9,99,Large Excess
+2024,HOBLI,Davanagere,Jagalur,Bilichodu,503.6,883.0,75,Large Excess
+2024,HOBLI,Davanagere,Jagalur,Sokke,574.4,1027.2,79,Large Excess
+2024,TALUK,Davanagere,Nyamati,Nyamati,825.7,1085.7,31,Excess
+2024,HOBLI,Davanagere,Nyamati,Belagutti,825.7,1116.3,35,Excess
+2024,HOBLI,Davanagere,Nyamati,Govinakovi_1,709.9,1001.9,41,Excess
+2024,DISTRICT,Chamarajanagara,,Chamarajanagara,786.9,836.3,6,Normal
+2024,TALUK,Chamarajanagara,Chamarajanagara,Chamarajanagara,769.7,880.7,14,Normal
+2024,HOBLI,Chamarajanagara,Chamarajanagara,Chamarajanagara,769.7,856.5,11,Normal
+2024,HOBLI,Chamarajanagara,Chamarajanagara,Chandakavadi,792.9,871.1,10,Normal
+2024,HOBLI,Chamarajanagara,Chamarajanagara,Haradanhalli,774.4,970.2,25,Excess
+2024,HOBLI,Chamarajanagara,Chamarajanagara,Harve,751.9,860.7,14,Normal
+2024,HOBLI,Chamarajanagara,Chamarajanagara,Santemarahalli,837.8,846.1,1,Normal
+2024,TALUK,Chamarajanagara,Gundlupet,Gundlupet,792.0,938.5,18,Normal
+2024,HOBLI,Chamarajanagara,Gundlupet,Gundlupet,792.0,905.8,14,Normal
+2024,HOBLI,Chamarajanagara,Gundlupet,Begur,648.7,926.9,43,Excess
+2024,HOBLI,Chamarajanagara,Gundlupet,Terakanambi,766.2,761.4,-1,Normal
+2024,HOBLI,Chamarajanagara,Gundlupet,Hangala,784.1,1006.6,28,Excess
+2024,TALUK,Chamarajanagara,Kollegal,Kollegal,843.4,789.3,-6,Normal
+2024,HOBLI,Chamarajanagara,Kollegal,Kollegala,843.4,695.5,-18,Normal
+2024,HOBLI,Chamarajanagara,Kollegal,Palya,802.3,839.0,5,Normal
+2024,TALUK,Chamarajanagara,Yelandur,Yelandur,867.3,750.0,-14,Normal
+2024,HOBLI,Chamarajanagara,Yelandur,Yelandur,867.3,809.8,-7,Normal
+2024,HOBLI,Chamarajanagara,Yelandur,Agara,770.8,720.7,-6,Normal
+2024,TALUK,Chamarajanagara,Hanur,Hanur,753.8,775.6,3,Normal
+2024,HOBLI,Chamarajanagara,Hanur,Hanur,753.8,785.5,4,Normal
+2024,HOBLI,Chamarajanagara,Hanur,Lokkanahalli,781.4,687.2,-12,Normal
+2024,HOBLI,Chamarajanagara,Hanur,Ramapura,811.1,797.0,-2,Normal
+2024,DISTRICT,Mysuru,,Mysuru,837.4,964.9,15,Normal
+2024,TALUK,Mysuru,Heggadadevanakote,Heggadadevanakote,836.7,1137.2,36,Excess
+2024,HOBLI,Mysuru,Heggadadevanakote,Heggadadevanakote,836.7,1078.9,29,Excess
+2024,HOBLI,Mysuru,Heggadadevanakote,Antarasante,1031.5,1263.2,22,Excess
+2024,HOBLI,Mysuru,Heggadadevanakote,Hampapura,764.5,984.1,29,Excess
+2024,TALUK,Mysuru,Hunsur,Hunsur,799.3,923.7,16,Normal
+2024,HOBLI,Mysuru,Hunsur,Hunsur,799.3,867.4,9,Normal
+2024,HOBLI,Mysuru,Hunsur,Bilikere,764.1,937.1,23,Excess
+2024,HOBLI,Mysuru,Hunsur,Gowdargyare,767.2,805.9,5,Normal
+2024,HOBLI,Mysuru,Hunsur,Hanagoadu,976.2,994.5,2,Normal
+2024,TALUK,Mysuru,Krishnarajanagar,Krishnarajanagar,734.9,712.7,-3,Normal
+2024,HOBLI,Mysuru,Krishnarajanagar,Krishnarajanagar,734.9,668.9,-9,Normal
+2024,HOBLI,Mysuru,Krishnarajanagar,Hebbalu,721.3,763.9,6,Normal
+2024,HOBLI,Mysuru,Krishnarajanagar,Hasa Agrahar,681.7,709.5,4,Normal
+2024,TALUK,Mysuru,Mysuru,Mysuru,809.9,807.6,0,Normal
+2024,HOBLI,Mysuru,Mysuru,Mysuru,809.9,848.8,5,Normal
+2024,HOBLI,Mysuru,Mysuru,Elivala,756.9,726.2,-4,Normal
+2024,HOBLI,Mysuru,Mysuru,Jayapura,774.1,886.6,15,Normal
+2024,HOBLI,Mysuru,Mysuru,Varuna,738.5,749.6,2,Normal
+2024,TALUK,Mysuru,Nanjanagud,Nanjanagud,730.0,926.3,27,Excess
+2024,HOBLI,Mysuru,Nanjanagud,Nanjangud,730.0,986.8,35,Excess
+2024,HOBLI,Mysuru,Nanjanagud,Biligere,725.6,837.8,15,Normal
+2024,HOBLI,Mysuru,Nanjanagud,Chikkayyana Chattra,732.3,882.4,20,Excess
+2024,HOBLI,Mysuru,Nanjanagud,Hullahalli,788.3,1010.4,28,Excess
+2024,HOBLI,Mysuru,Nanjanagud,Doddakowlande,731.0,815.7,12,Normal
+2024,TALUK,Mysuru,Periyapatna,Periyapatna,851.7,1093.8,28,Excess
+2024,HOBLI,Mysuru,Periyapatna,Periyapatna,851.7,1093.0,28,Excess
+2024,HOBLI,Mysuru,Periyapatna,Bettadpur,770.1,1095.0,42,Excess
+2024,HOBLI,Mysuru,Periyapatna,Haranahalli,957.0,1279.6,34,Excess
+2024,HOBLI,Mysuru,Periyapatna,Ravanduru,809.7,836.2,3,Normal
+2024,TALUK,Mysuru,T.Narasipura,T.Narasipura,738.2,877.6,19,Normal
+2024,HOBLI,Mysuru,T.Narasipura,T.Narasipur,738.2,909.9,23,Excess
+2024,HOBLI,Mysuru,T.Narasipura,Bannur,721.4,836.7,16,Normal
+2024,HOBLI,Mysuru,T.Narasipura,Muguru,781.3,849.3,9,Normal
+2024,HOBLI,Mysuru,T.Narasipura,Sosale,737.8,967.8,31,Excess
+2024,HOBLI,Mysuru,T.Narasipura,Talakad,776.8,819.6,6,Normal
+2024,TALUK,Mysuru,Saraguru,Saraguru,949.7,1067.4,12,Normal
+2024,HOBLI,Mysuru,Saraguru,Saraguru,949.7,1030.3,8,Normal
+2024,HOBLI,Mysuru,Saraguru,B.Matakere,937.4,1094.9,17,Normal
+2024,TALUK,Mysuru,Saligram,Saligram,662.9,921.5,39,Excess
+2024,HOBLI,Mysuru,Saligram,Saligram,662.9,983.0,48,Excess
+2024,HOBLI,Mysuru,Saligram,Mirale,690.2,970.4,41,Excess
+2024,HOBLI,Mysuru,Saligram,Chanachanakatte,698.6,813.5,16,Normal
+2024,DISTRICT,Mandya,,Mandya,699.0,868.9,24,Excess
+2024,TALUK,Mandya,Krishnarajapet,Krishnarajapet,747.4,1061.4,42,Excess
+2024,HOBLI,Mandya,Krishnarajapet,Krishnarajapet,747.4,933.6,25,Excess
+2024,HOBLI,Mandya,Krishnarajapet,Akkihebalu,699.4,1092.4,56,Excess
+2024,HOBLI,Mandya,Krishnarajapet,Bukanakere,700.3,843.5,20,Excess
+2024,HOBLI,Mandya,Krishnarajapet,Kikkeri,719.5,1215.0,69,Large Excess
+2024,HOBLI,Mandya,Krishnarajapet,Santebachahalli,652.0,1223.7,88,Large Excess
+2024,HOBLI,Mandya,Krishnarajapet,Silanare,697.7,1060.2,52,Excess
+2024,TALUK,Mandya,Maddur,Maddur,767.0,703.4,-8,Normal
+2024,HOBLI,Mandya,Maddur,Madduru_2,767.0,710.1,-7,Normal
+2024,HOBLI,Mandya,Maddur,Koppa_2,883.4,715.0,-19,Normal
+2024,HOBLI,Mandya,Maddur,Chikkaarasinakere_1,753.1,585.9,-22,Deficient
+2024,HOBLI,Mandya,Maddur,Autaguru,779.1,747.5,-4,Normal
+2024,HOBLI,Mandya,Maddur,Madduru_1,757.8,625.0,-18,Normal
+2024,HOBLI,Mandya,Maddur,Koppa_2,739.3,915.4,24,Excess
+2024,HOBLI,Mandya,Maddur,Koppa_1,832.2,768.5,-8,Normal
+2024,HOBLI,Mandya,Maddur,Koppa_3,768.5,736.3,-4,Normal
+2024,HOBLI,Mandya,Maddur,Chikaarasinakere_2,742.1,633.6,-15,Normal
+2024,HOBLI,Mandya,Maddur,Chikaarasinakere_3,734.5,667.3,-9,Normal
+2024,TALUK,Mandya,Malavalli,Malavalli,702.6,889.2,27,Excess
+2024,HOBLI,Mandya,Malavalli,Malavalli_1,702.6,758.5,8,Normal
+2024,HOBLI,Mandya,Malavalli,Halaguru,799.3,962.4,20,Excess
+2024,HOBLI,Mandya,Malavalli,Kirgavalu_1,719.0,747.1,4,Normal
+2024,HOBLI,Mandya,Malavalli,B G Pura_2,778.1,883.9,14,Normal
+2024,HOBLI,Mandya,Malavalli,Malavalli_2,748.3,924.2,24,Excess
+2024,HOBLI,Mandya,Malavalli,Malavalli_3,772.3,742.3,-4,Normal
+2024,HOBLI,Mandya,Malavalli,Kirgavalu_2,721.1,986.8,37,Excess
+2024,HOBLI,Mandya,Malavalli,Kirgavalu_3,718.6,899.2,25,Excess
+2024,HOBLI,Mandya,Malavalli,B G Pura_1,772.6,906.4,17,Normal
+2024,TALUK,Mandya,Mandya,Mandya,699.7,762.6,9,Normal
+2024,HOBLI,Mandya,Mandya,Mandya_1,699.7,610.6,-13,Normal
+2024,HOBLI,Mandya,Mandya,Basaralu_1,609.5,929.2,52,Excess
+2024,HOBLI,Mandya,Mandya,Dudda_1,648.8,833.4,28,Excess
+2024,HOBLI,Mandya,Mandya,Keragodu_1,735.1,733.6,0,Normal
+2024,HOBLI,Mandya,Mandya,Kottatti_1,697.4,691.3,-1,Normal
+2024,HOBLI,Mandya,Mandya,Mandya_2,736.9,625.9,-15,Normal
+2024,HOBLI,Mandya,Mandya,Kottatti_2,709.4,709.5,0,Normal
+2024,HOBLI,Mandya,Mandya,Keragodu_2,747.4,703.5,-6,Normal
+2024,HOBLI,Mandya,Mandya,Dudda_2,681.4,606.7,-11,Normal
+2024,HOBLI,Mandya,Mandya,Basaralu_2,796.4,959.9,21,Excess
+2024,TALUK,Mandya,Nagamangala,Nagamangala,765.1,904.3,18,Normal
+2024,HOBLI,Mandya,Nagamangala,Nagamangala,765.1,621.3,-19,Normal
+2024,HOBLI,Mandya,Nagamangala,Belluru,520.0,965.2,86,Large Excess
+2024,HOBLI,Mandya,Nagamangala,Bendaganavele,556.4,1177.1,112,Large Excess
+2024,HOBLI,Mandya,Nagamangala,Devalapura,692.0,810.1,17,Normal
+2024,HOBLI,Mandya,Nagamangala,Honakere,465.3,973.1,109,Large Excess
+2024,TALUK,Mandya,Pandavapura,Pandavapura,679.6,806.8,19,Normal
+2024,HOBLI,Mandya,Pandavapura,Pandavapura_1,679.6,664.2,-2,Normal
+2024,HOBLI,Mandya,Pandavapura,Chinkurali,684.6,873.1,28,Excess
+2024,HOBLI,Mandya,Pandavapura,Melukote,701.8,853.8,22,Excess
+2024,HOBLI,Mandya,Pandavapura,Pandavapura_2,660.5,688.7,4,Normal
+2024,TALUK,Mandya,Srirangapatna,Srirangapatna,638.1,834.1,31,Excess
+2024,HOBLI,Mandya,Srirangapatna,Srirangapatna,638.1,842.4,32,Excess
+2024,HOBLI,Mandya,Srirangapatna,Arakere,700.9,798.5,14,Normal
+2024,HOBLI,Mandya,Srirangapatna,Belagola,748.0,870.1,16,Normal
+2024,HOBLI,Mandya,Srirangapatna,K Shettihalli_2,650.6,847.9,30,Excess
+2024,HOBLI,Mandya,Srirangapatna,K Shettihalli_1,642.9,855.2,33,Excess
+2024,DISTRICT,Ballari,,Ballari,599.5,662.6,11,Normal
+2024,TALUK,Ballari,Ballari,Ballari,516.2,431.4,-16,Normal
+2024,HOBLI,Ballari,Ballari,Ballari,516.2,410.1,-21,Deficient
+2024,HOBLI,Ballari,Ballari,Moka,523.8,559.0,7,Normal
+2024,HOBLI,Ballari,Ballari,Rupanagudi,504.6,316.6,-37,Deficient
+2024,HOBLI,Ballari,Ballari,Koluru,525.3,475.5,-9,Normal
+2024,TALUK,Ballari,Sandur,Sandur,818.6,893.9,9,Normal
+2024,HOBLI,Ballari,Sandur,Sandur,818.6,906.4,11,Normal
+2024,HOBLI,Ballari,Sandur,Choranuru,626.8,975.4,56,Excess
+2024,HOBLI,Ballari,Sandur,Toranagallu,611.6,776.8,27,Excess
+2024,TALUK,Ballari,Siruguppa,Siruguppa,675.1,650.4,-4,Normal
+2024,HOBLI,Ballari,Siruguppa,Siruguppa,675.1,790.0,17,Normal
+2024,HOBLI,Ballari,Siruguppa,Hachcholli,655.7,700.4,7,Normal
+2024,HOBLI,Ballari,Siruguppa,Karuru,563.1,476.2,-15,Normal
+2024,HOBLI,Ballari,Siruguppa,Tekkalakote,630.0,682.1,8,Normal
+2024,TALUK,Ballari,Kurugodu,Kurugodu,499.2,595.2,19,Normal
+2024,HOBLI,Ballari,Kurugodu,Kurugodu,499.2,631.4,26,Excess
+2024,HOBLI,Ballari,Kurugodu,Koluru,513.6,536.9,5,Normal
+2024,TALUK,Ballari,Kampli,Kampli,531.1,657.0,24,Excess
+2024,HOBLI,Ballari,Kampli,Kampli,531.1,685.0,29,Excess
+2024,HOBLI,Ballari,Kampli,Kurugodu,552.8,607.8,10,Normal
+2024,DISTRICT,Koppala,,Koppala,613.8,598.3,-3,Normal
+2024,TALUK,Koppala,Gangavathi,Gangavathi,583.0,673.1,15,Normal
+2024,HOBLI,Koppala,Gangavathi,Gangavathi,583.0,724.6,24,Excess
+2024,HOBLI,Koppala,Gangavathi,Marali,571.3,579.8,1,Normal
+2024,HOBLI,Koppala,Gangavathi,Venkatagiri,585.5,705.1,20,Excess
+2024,TALUK,Koppala,Koppala,Koppala,635.0,610.5,-4,Normal
+2024,HOBLI,Koppala,Koppala,Koppal,635.0,629.0,-1,Normal
+2024,HOBLI,Koppala,Koppala,Alawandi,586.7,645.5,10,Normal
+2024,HOBLI,Koppala,Koppala,Hitnal,640.1,620.0,-3,Normal
+2024,HOBLI,Koppala,Koppala,Irkalgada,626.9,538.5,-14,Normal
+2024,TALUK,Koppala,Kushtagi,Kushtagi,597.1,550.9,-8,Normal
+2024,HOBLI,Koppala,Kushtagi,Kushtagi,597.1,559.6,-6,Normal
+2024,HOBLI,Koppala,Kushtagi,Hanumanhal,658.4,515.4,-22,Deficient
+2024,HOBLI,Koppala,Kushtagi,Hanamsagar,626.6,547.2,-13,Normal
+2024,HOBLI,Koppala,Kushtagi,Tavaragera,591.8,568.4,-4,Normal
+2024,TALUK,Koppala,Yelburga,Yelburga,596.8,646.7,8,Normal
+2024,HOBLI,Koppala,Yelburga,Yelburga,596.8,641.6,8,Normal
+2024,HOBLI,Koppala,Yelburga,Hire Wankalkunti,594.9,658.2,11,Normal
+2024,TALUK,Koppala,Karatagi,Karatagi,639.8,540.1,-16,Normal
+2024,HOBLI,Koppala,Karatagi,Karatgi,639.8,535.8,-16,Normal
+2024,HOBLI,Koppala,Karatagi,Siddapur,592.7,544.7,-8,Normal
+2024,TALUK,Koppala,Kukanuru,Kukanuru,693.2,537.9,-22,Deficient
+2024,HOBLI,Koppala,Kukanuru,Kukanoor,693.2,500.6,-28,Deficient
+2024,HOBLI,Koppala,Kukanuru,Manglur,630.4,623.5,-1,Normal
+2024,TALUK,Koppala,Kanakagiri,Kanakagiri,525.2,665.1,27,Excess
+2024,HOBLI,Koppala,Kanakagiri,Kanakagiri,525.2,637.9,21,Excess
+2024,HOBLI,Koppala,Kanakagiri,Hulihaider,557.6,568.6,2,Normal
+2024,HOBLI,Koppala,Kanakagiri,Nauli,594.9,781.4,31,Excess
+2024,DISTRICT,Raichur,,Raichur,654.7,636.6,-3,Normal
+2024,TALUK,Raichur,Deodurga,Deodurga,759.0,630.0,-17,Normal
+2024,HOBLI,Raichur,Deodurga,Devadurga,759.0,619.7,-18,Normal
+2024,HOBLI,Raichur,Deodurga,Arakeri,658.5,650.1,-1,Normal
+2024,HOBLI,Raichur,Deodurga,Gabbur,682.5,667.2,-2,Normal
+2024,HOBLI,Raichur,Deodurga,Jalihalli,690.3,580.6,-16,Normal
+2024,TALUK,Raichur,Lingsugur,Lingsugur,631.3,643.1,2,Normal
+2024,HOBLI,Raichur,Lingsugur,Lingasuguru,631.3,672.2,6,Normal
+2024,HOBLI,Raichur,Lingsugur,Gurgunta,622.8,644.0,3,Normal
+2024,HOBLI,Raichur,Lingsugur,Mudgal,624.7,615.4,-1,Normal
+2024,TALUK,Raichur,Manvi,Manvi,651.9,522.1,-20,Deficient
+2024,HOBLI,Raichur,Manvi,Manvi,651.9,489.5,-25,Deficient
+2024,HOBLI,Raichur,Manvi,Hire Katankal,644.3,492.1,-24,Deficient
+2024,HOBLI,Raichur,Manvi,Kurdi,663.2,594.1,-10,Normal
+2024,TALUK,Raichur,Raichur,Raichur,735.6,769.1,5,Normal
+2024,HOBLI,Raichur,Raichur,Raichur,735.6,846.1,15,Normal
+2024,HOBLI,Raichur,Raichur,Chandrabanda,733.0,758.6,3,Normal
+2024,HOBLI,Raichur,Raichur,Devarsugur,723.4,810.9,12,Normal
+2024,HOBLI,Raichur,Raichur,Gilasuguru,610.8,667.0,9,Normal
+2024,HOBLI,Raichur,Raichur,Kalmali,678.3,707.8,4,Normal
+2024,HOBLI,Raichur,Raichur,Yergara,762.8,823.0,8,Normal
+2024,TALUK,Raichur,Sindhanur,Sindhanur,691.4,628.6,-9,Normal
+2024,HOBLI,Raichur,Sindhanur,Sindhanur,691.4,642.3,-7,Normal
+2024,HOBLI,Raichur,Sindhanur,Badarli,662.9,684.0,3,Normal
+2024,HOBLI,Raichur,Sindhanur,Gorebal,648.9,464.7,-28,Deficient
+2024,HOBLI,Raichur,Sindhanur,Gunjihalli,634.6,594.9,-6,Normal
+2024,HOBLI,Raichur,Sindhanur,Hadganhal,654.9,636.5,-3,Normal
+2024,HOBLI,Raichur,Sindhanur,Huda,649.9,482.4,-26,Deficient
+2024,HOBLI,Raichur,Sindhanur,Jalihal,637.7,708.9,11,Normal
+2024,HOBLI,Raichur,Sindhanur,Jawalgeri,655.9,702.1,7,Normal
+2024,HOBLI,Raichur,Sindhanur,Kunatgi,660.7,732.8,11,Normal
+2024,HOBLI,Raichur,Sindhanur,Salgundi,660.2,590.6,-11,Normal
+2024,HOBLI,Raichur,Sindhanur,Turvihal,627.4,685.6,9,Normal
+2024,HOBLI,Raichur,Sindhanur,Walkamdinni,644.9,621.6,-4,Normal
+2024,TALUK,Raichur,Maski,Maski,559.5,569.1,2,Normal
+2024,HOBLI,Raichur,Maski,Maski,559.5,591.2,6,Normal
+2024,HOBLI,Raichur,Maski,Halapur,587.1,469.7,-20,Deficient
+2024,HOBLI,Raichur,Maski,Pamankallur,602.2,499.3,-17,Normal
+2024,HOBLI,Raichur,Maski,Balganur,598.7,642.1,7,Normal
+2024,HOBLI,Raichur,Maski,Gunjihalli,609.9,634.4,4,Normal
+2024,HOBLI,Raichur,Maski,Turvihal,603.8,668.4,11,Normal
+2024,HOBLI,Raichur,Maski,Gudadur,574.3,611.5,6,Normal
+2024,HOBLI,Raichur,Maski,Lingsugur,593.0,444.8,-25,Deficient
+2024,TALUK,Raichur,Sirivara,Sirivara,588.7,606.5,3,Normal
+2024,HOBLI,Raichur,Sirivara,Sirwar,588.7,605.4,3,Normal
+2024,HOBLI,Raichur,Sirivara,Kallur,671.5,624.4,-7,Normal
+2024,HOBLI,Raichur,Sirivara,Mallat,624.5,615.6,-1,Normal
+2024,HOBLI,Raichur,Sirivara,Kavital,622.7,580.1,-7,Normal
+2024,DISTRICT,Kalaburagi,,Kalaburagi,770.5,830.5,8,Normal
+2024,TALUK,Kalaburagi,Afzalpur,Afzalpur,692.0,768.4,11,Normal
+2024,HOBLI,Kalaburagi,Afzalpur,Afzalpur,692.0,766.3,11,Normal
+2024,HOBLI,Kalaburagi,Afzalpur,Atanur,707.2,792.8,12,Normal
+2024,HOBLI,Kalaburagi,Afzalpur,Karajgi,663.7,745.0,12,Normal
+2024,TALUK,Kalaburagi,Aland,Aland,763.7,886.1,16,Normal
+2024,HOBLI,Kalaburagi,Aland,Aland,763.7,870.8,14,Normal
+2024,HOBLI,Kalaburagi,Aland,Khajuri,757.2,941.4,24,Excess
+2024,HOBLI,Kalaburagi,Aland,Madana Hipparga,735.5,870.4,18,Normal
+2024,HOBLI,Kalaburagi,Aland,Narona,766.6,953.1,24,Excess
+2024,HOBLI,Kalaburagi,Aland,Nimbarga Tanda,761.8,839.1,10,Normal
+2024,TALUK,Kalaburagi,Chincholi,Chincholi,913.2,852.6,-7,Normal
+2024,HOBLI,Kalaburagi,Chincholi,Chincholi,913.2,971.2,6,Normal
+2024,HOBLI,Kalaburagi,Chincholi,Ainapur,783.4,832.0,6,Normal
+2024,HOBLI,Kalaburagi,Chincholi,Sulepet,873.9,737.3,-16,Normal
+2024,HOBLI,Kalaburagi,Chincholi,Kodli Chincholi,896.8,735.5,-18,Normal
+2024,TALUK,Kalaburagi,Chittapur,Chittapur,771.2,886.3,15,Normal
+2024,HOBLI,Kalaburagi,Chittapur,Chittapur,771.2,926.6,20,Excess
+2024,HOBLI,Kalaburagi,Chittapur,Gundgurti,776.5,833.1,7,Normal
+2024,HOBLI,Kalaburagi,Chittapur,Nalavara,791.2,879.5,11,Normal
+2024,TALUK,Kalaburagi,Kalaburagi,Kalaburagi,794.0,787.5,-1,Normal
+2024,HOBLI,Kalaburagi,Kalaburagi,Kalaburagi,794.0,829.7,4,Normal
+2024,HOBLI,Kalaburagi,Kalaburagi,Aurad,777.5,827.2,6,Normal
+2024,HOBLI,Kalaburagi,Kalaburagi,Farhatabad,779.2,751.8,-4,Normal
+2024,HOBLI,Kalaburagi,Kalaburagi,Pattan,772.7,760.4,-2,Normal
+2024,TALUK,Kalaburagi,Jevargi,Jevargi,804.9,688.3,-14,Normal
+2024,HOBLI,Kalaburagi,Jevargi,Jewargi,804.9,688.1,-15,Normal
+2024,HOBLI,Kalaburagi,Jevargi,Andola,792.1,701.1,-11,Normal
+2024,HOBLI,Kalaburagi,Jevargi,Nelogi,752.9,676.6,-10,Normal
+2024,TALUK,Kalaburagi,Sedam,Sedam,790.8,988.7,25,Excess
+2024,HOBLI,Kalaburagi,Sedam,Sedam,790.8,944.0,19,Normal
+2024,HOBLI,Kalaburagi,Sedam,Adki,807.0,992.1,23,Excess
+2024,HOBLI,Kalaburagi,Sedam,Kodla,799.5,972.0,22,Excess
+2024,HOBLI,Kalaburagi,Sedam,Mudhol,806.9,1060.4,31,Excess
+2024,TALUK,Kalaburagi,Kalagi,Kalagi,765.5,834.2,9,Normal
+2024,HOBLI,Kalaburagi,Kalagi,Kalagi,765.5,874.7,14,Normal
+2024,HOBLI,Kalaburagi,Kalagi,Kodli,774.2,767.0,-1,Normal
+2024,HOBLI,Kalaburagi,Kalagi,Gundgurti,772.8,855.7,11,Normal
+2024,TALUK,Kalaburagi,Kamalapura,Kamalapura,762.0,926.2,22,Excess
+2024,HOBLI,Kalaburagi,Kamalapura,Kamalapur,762.0,857.1,12,Normal
+2024,HOBLI,Kalaburagi,Kamalapura,Mahagaon Tanda,772.1,937.1,21,Excess
+2024,HOBLI,Kalaburagi,Kamalapura,Narona,770.2,1108.1,44,Excess
+2024,HOBLI,Kalaburagi,Kamalapura,Ainapur,779.7,676.0,-13,Normal
+2024,TALUK,Kalaburagi,Yadrami,Yadrami,686.5,677.3,-1,Normal
+2024,HOBLI,Kalaburagi,Yadrami,Yadrami,686.5,657.7,-4,Normal
+2024,HOBLI,Kalaburagi,Yadrami,Ijeri,750.0,708.5,-6,Normal
+2024,TALUK,Kalaburagi,Shahbadha,Shahbadha,758.4,837.3,10,Normal
+2024,HOBLI,Kalaburagi,Shahbadha,Shahabad,758.4,837.3,10,Normal
+2024,DISTRICT,Bidar,,Bidar,838.1,838.7,0,Normal
+2024,TALUK,Bidar,Aurad,Aurad,854.8,643.6,-25,Deficient
+2024,HOBLI,Bidar,Aurad,Aurad,854.8,653.3,-24,Deficient
+2024,HOBLI,Bidar,Aurad,Chintaki,873.0,560.8,-36,Deficient
+2024,HOBLI,Bidar,Aurad,Santpur,875.0,692.9,-21,Deficient
+2024,TALUK,Bidar,Bidar,Bidar,939.8,837.9,-11,Normal
+2024,HOBLI,Bidar,Bidar,Bidar,939.8,768.6,-18,Normal
+2024,HOBLI,Bidar,Bidar,Bagadhal,843.1,811.9,-4,Normal
+2024,HOBLI,Bidar,Bidar,Bidar South,935.1,873.6,-7,Normal
+2024,HOBLI,Bidar,Bidar,Janwada,909.4,868.5,-4,Normal
+2024,HOBLI,Bidar,Bidar,Kamthana,906.5,826.4,-9,Normal
+2024,HOBLI,Bidar,Bidar,Manalli,890.2,890.9,0,Normal
+2024,TALUK,Bidar,Bhalki,Bhalki,874.1,866.8,-1,Normal
+2024,HOBLI,Bidar,Bhalki,Bhalki,874.1,879.4,1,Normal
+2024,HOBLI,Bidar,Bhalki,Halburga,875.4,857.6,-2,Normal
+2024,HOBLI,Bidar,Bhalki,Khatak Chincholi,833.2,940.7,13,Normal
+2024,HOBLI,Bidar,Bhalki,Lakangaon,877.3,847.1,-3,Normal
+2024,HOBLI,Bidar,Bhalki,Nittur Buzurg,873.5,847.7,-3,Normal
+2024,HOBLI,Bidar,Bhalki,Saigaon,769.2,845.5,10,Normal
+2024,TALUK,Bidar,Basavakalyan,Basavakalyan,790.3,941.5,19,Normal
+2024,HOBLI,Bidar,Basavakalyan,Basavakalyan,790.3,949.3,20,Excess
+2024,HOBLI,Bidar,Basavakalyan,Kohinoor,774.8,954.5,23,Excess
+2024,HOBLI,Bidar,Basavakalyan,Matala,786.9,985.4,25,Excess
+2024,HOBLI,Bidar,Basavakalyan,Mudabi,778.9,928.6,19,Normal
+2024,HOBLI,Bidar,Basavakalyan,Rajeshwar,813.4,890.1,9,Normal
+2024,TALUK,Bidar,Humnabad,Humnabad,834.2,961.6,15,Normal
+2024,HOBLI,Bidar,Humnabad,Humnabad,834.2,995.9,19,Normal
+2024,HOBLI,Bidar,Humnabad,Dubalgundi,822.4,938.0,14,Normal
+2024,HOBLI,Bidar,Humnabad,Hallikheda,827.0,940.0,14,Normal
+2024,TALUK,Bidar,Chittaguppa,Chittaguppa,759.4,952.2,25,Excess
+2024,HOBLI,Bidar,Chittaguppa,Chitguppa,759.4,886.2,17,Normal
+2024,HOBLI,Bidar,Chittaguppa,Bhimalkhed,838.3,1012.9,21,Excess
+2024,HOBLI,Bidar,Chittaguppa,Nirna,794.1,980.6,23,Excess
+2024,TALUK,Bidar,Kamalanagara,Kamalanagara,902.4,716.3,-21,Deficient
+2024,HOBLI,Bidar,Kamalanagara,Kamalnagar,902.4,613.4,-32,Deficient
+2024,HOBLI,Bidar,Kamalanagara,Dabaka C.,877.7,866.8,-1,Normal
+2024,HOBLI,Bidar,Kamalanagara,Thanakushanur,873.4,739.2,-15,Normal
+2024,TALUK,Bidar,Hulasuru,Hulasuru,739.3,625.0,-15,Normal
+2024,HOBLI,Bidar,Hulasuru,Hulsoor,739.3,625.0,-15,Normal
+2024,DISTRICT,Belagavi,,Belagavi,826.2,1165.0,41,Excess
+2024,TALUK,Belagavi,Athani,Athani,539.0,642.4,19,Normal
+2024,HOBLI,Belagavi,Athani,Athani,539.0,618.2,15,Normal
+2024,HOBLI,Belagavi,Athani,Anantapur,516.9,649.4,26,Excess
+2024,HOBLI,Belagavi,Athani,Telsang,507.3,656.4,29,Excess
+2024,TALUK,Belagavi,Bailhongal,Bailhongal,816.0,1038.1,27,Excess
+2024,HOBLI,Belagavi,Bailhongal,Bailhongal,816.0,979.2,20,Excess
+2024,HOBLI,Belagavi,Bailhongal,Nesargi,770.7,1086.2,41,Excess
+2024,TALUK,Belagavi,Belagavi,Belagavi,1363.1,1673.2,23,Excess
+2024,HOBLI,Belagavi,Belagavi,Belagavi,1363.1,1776.7,30,Excess
+2024,HOBLI,Belagavi,Belagavi,Hirebagevadi,1041.3,1338.5,29,Excess
+2024,HOBLI,Belagavi,Belagavi,Kakti,1130.5,1322.0,17,Normal
+2024,HOBLI,Belagavi,Belagavi,Uchagaon,1340.9,2302.3,72,Large Excess
+2024,TALUK,Belagavi,Chikkodi,Chikkodi,666.0,873.4,31,Excess
+2024,HOBLI,Belagavi,Chikkodi,Chikkodi,666.0,928.2,39,Excess
+2024,HOBLI,Belagavi,Chikkodi,Nagaramonnali,634.1,807.3,27,Excess
+2024,HOBLI,Belagavi,Chikkodi,Sadalgi,663.4,854.2,29,Excess
+2024,TALUK,Belagavi,Gokak,Gokak,524.1,707.3,35,Excess
+2024,HOBLI,Belagavi,Gokak,Gokak,524.1,755.6,44,Excess
+2024,HOBLI,Belagavi,Gokak,Kowjalgi,537.0,712.1,33,Excess
+2024,HOBLI,Belagavi,Gokak,Arbhavi,560.4,569.2,2,Normal
+2024,TALUK,Belagavi,Hukkeri,Hukkeri,648.6,1015.1,57,Excess
+2024,HOBLI,Belagavi,Hukkeri,Hukkeri,648.6,781.5,20,Excess
+2024,HOBLI,Belagavi,Hukkeri,Sankeswar,812.1,1184.0,46,Excess
+2024,HOBLI,Belagavi,Hukkeri,Yamkanmardi,685.2,1081.5,58,Excess
+2024,TALUK,Belagavi,Khanapur,Khanapur,1950.2,3018.9,55,Excess
+2024,HOBLI,Belagavi,Khanapur,Khanapur,1950.2,1977.9,1,Normal
+2024,HOBLI,Belagavi,Khanapur,Bidi,1413.4,1755.9,24,Excess
+2024,HOBLI,Belagavi,Khanapur,Gunji,2263.3,3371.4,49,Excess
+2024,HOBLI,Belagavi,Khanapur,Jamboti,1856.1,3825.7,106,Large Excess
+2024,TALUK,Belagavi,Ramadurga,Ramadurga,540.4,707.7,31,Excess
+2024,HOBLI,Belagavi,Ramadurga,Ramdurg,540.4,665.8,23,Excess
+2024,HOBLI,Belagavi,Ramadurga,Bidki,534.0,685.7,28,Excess
+2024,HOBLI,Belagavi,Ramadurga,Katkol,535.6,762.4,42,Excess
+2024,HOBLI,Belagavi,Ramadurga,Mudkavi,542.5,700.7,29,Excess
+2024,TALUK,Belagavi,Raibagh,Raibagh,483.1,614.1,27,Excess
+2024,HOBLI,Belagavi,Raibagh,Raibagh,483.1,610.5,26,Excess
+2024,HOBLI,Belagavi,Raibagh,Kudchi,528.9,617.6,17,Normal
+2024,TALUK,Belagavi,Soundatti,Soundatti,568.0,848.1,49,Excess
+2024,HOBLI,Belagavi,Soundatti,Savadatti,568.0,905.1,59,Excess
+2024,HOBLI,Belagavi,Soundatti,Manoli,562.0,809.9,44,Excess
+2024,HOBLI,Belagavi,Soundatti,Muragoda,607.1,822.5,35,Excess
+2024,TALUK,Belagavi,Kitthuru,Kitthuru,1035.5,1387.8,34,Excess
+2024,HOBLI,Belagavi,Kitthuru,Kittur,1035.5,1375.1,33,Excess
+2024,TALUK,Belagavi,Nippani,Nippani,838.1,1128.7,35,Excess
+2024,HOBLI,Belagavi,Nippani,Nippani,838.1,1239.4,48,Excess
+2024,HOBLI,Belagavi,Nippani,Sadalgi,766.8,987.8,29,Excess
+2024,TALUK,Belagavi,Kagavada,Kagavada,540.7,882.2,63,Large Excess
+2024,HOBLI,Belagavi,Kagavada,Kagwad,540.7,882.2,63,Large Excess
+2024,TALUK,Belagavi,Mudagali,Mudagali,533.5,637.4,19,Normal
+2024,HOBLI,Belagavi,Mudagali,Arbhavi,533.5,674.7,26,Excess
+2024,HOBLI,Belagavi,Mudagali,Kowjalgi,528.5,602.1,14,Normal
+2024,HOBLI,Belagavi,Mudagali,Yargatti,532.8,735.6,38,Excess
+2024,TALUK,Belagavi,Yargatti,Yargatti,532.8,735.6,38,Excess
+2024,DISTRICT,Bagalkote,,Bagalkote,582.4,602.9,4,Normal
+2024,TALUK,Bagalkote,Badami,Badami,599.5,599.5,0,Normal
+2024,HOBLI,Bagalkote,Badami,Badami,599.5,557.0,-7,Normal
+2024,HOBLI,Bagalkote,Badami,Kerur,569.7,615.1,8,Normal
+2024,HOBLI,Bagalkote,Badami,Kulgeri,582.5,625.8,7,Normal
+2024,TALUK,Bagalkote,Bagalkote,Bagalkote,612.6,571.6,-7,Normal
+2024,HOBLI,Bagalkote,Bagalkote,Bagalkote,612.6,548.2,-11,Normal
+2024,HOBLI,Bagalkote,Bagalkote,Kaladgi,548.1,518.8,-5,Normal
+2024,HOBLI,Bagalkote,Bagalkote,Rampura,611.7,642.6,5,Normal
+2024,TALUK,Bagalkote,Bilgi,Bilgi,609.5,495.3,-19,Normal
+2024,HOBLI,Bagalkote,Bilgi,Bilgi,609.5,508.7,-17,Normal
+2024,HOBLI,Bagalkote,Bilgi,Anagvadi,598.7,480.2,-20,Deficient
+2024,TALUK,Bagalkote,Hungund,Hungund,669.5,634.7,-5,Normal
+2024,HOBLI,Bagalkote,Hungund,Hungund,669.5,587.4,-12,Normal
+2024,HOBLI,Bagalkote,Hungund,Amingarh,632.6,696.3,10,Normal
+2024,HOBLI,Bagalkote,Hungund,Karadi,652.2,663.8,2,Normal
+2024,TALUK,Bagalkote,Jamkhandi,Jamkhandi,548.3,704.4,28,Excess
+2024,HOBLI,Bagalkote,Jamkhandi,Jamakhandi,548.3,665.9,21,Excess
+2024,HOBLI,Bagalkote,Jamkhandi,Savalagi,529.7,726.1,37,Excess
+2024,HOBLI,Bagalkote,Jamkhandi,Terdal,542.8,793.0,46,Excess
+2024,TALUK,Bagalkote,Mudhol,Mudhol,532.0,547.6,3,Normal
+2024,HOBLI,Bagalkote,Mudhol,Mudhol,532.0,529.4,0,Normal
+2024,HOBLI,Bagalkote,Mudhol,Lokapur,472.5,566.1,20,Excess
+2024,TALUK,Bagalkote,Guledagudda,Guledagudda,606.8,650.4,7,Normal
+2024,HOBLI,Bagalkote,Guledagudda,Guledagudda,606.8,650.4,7,Normal
+2024,TALUK,Bagalkote,Ilkal,Ilkal,651.4,658.4,1,Normal
+2024,HOBLI,Bagalkote,Ilkal,Ilkal,651.4,719.6,10,Normal
+2024,HOBLI,Bagalkote,Ilkal,Amingarh,636.4,593.5,-7,Normal
+2024,HOBLI,Bagalkote,Ilkal,Karadi,653.8,562.9,-14,Normal
+2024,TALUK,Bagalkote,Rabakavi Banahatti,Rabakavi Banahatti,495.7,622.2,26,Excess
+2024,HOBLI,Bagalkote,Rabakavi Banahatti,Terdal,495.7,616.1,24,Excess
+2024,HOBLI,Bagalkote,Rabakavi Banahatti,Mudhol,549.7,645.8,17,Normal
+2024,DISTRICT,Vijayapura,,Vijayapura,591.2,621.6,5,Normal
+2024,TALUK,Vijayapura,Bagevadi,Bagevadi,668.5,594.5,-11,Normal
+2024,HOBLI,Vijayapura,Bagevadi,Basavana Bagewadi,668.5,604.3,-10,Normal
+2024,HOBLI,Vijayapura,Bagevadi,Huvin Hippargi,647.1,602.3,-7,Normal
+2024,HOBLI,Vijayapura,Bagevadi,Managuli,608.3,577.6,-5,Normal
+2024,TALUK,Vijayapura,Vijayapura,Vijayapura,670.9,522.3,-22,Deficient
+2024,HOBLI,Vijayapura,Vijayapura,Vijayapura,670.9,542.5,-19,Normal
+2024,HOBLI,Vijayapura,Vijayapura,Nagathan,392.3,493.2,26,Excess
+2024,TALUK,Vijayapura,Indi,Indi,620.2,649.8,5,Normal
+2024,HOBLI,Vijayapura,Indi,Indi,620.2,636.3,3,Normal
+2024,HOBLI,Vijayapura,Indi,Ballolli,563.4,664.4,18,Normal
+2024,TALUK,Vijayapura,Muddebihal,Muddebihal,651.7,589.6,-10,Normal
+2024,HOBLI,Vijayapura,Muddebihal,Muddebihal,651.7,630.3,-3,Normal
+2024,HOBLI,Vijayapura,Muddebihal,Dhavalagi,637.9,546.1,-14,Normal
+2024,HOBLI,Vijayapura,Muddebihal,Nalatvad,690.6,590.4,-15,Normal
+2024,TALUK,Vijayapura,Sindgi,Sindgi,657.8,643.4,-2,Normal
+2024,HOBLI,Vijayapura,Sindgi,Sindhagi,657.8,644.0,-2,Normal
+2024,TALUK,Vijayapura,Babaleshwara,Babaleshwara,544.6,639.8,17,Normal
+2024,HOBLI,Vijayapura,Babaleshwara,Babaleshwar,544.6,652.6,20,Excess
+2024,HOBLI,Vijayapura,Babaleshwara,Mamdapur,568.8,607.7,7,Normal
+2024,TALUK,Vijayapura,Chadachana,Chadachana,552.4,597.8,8,Normal
+2024,HOBLI,Vijayapura,Chadachana,Chadchan,552.4,597.9,8,Normal
+2024,TALUK,Vijayapura,Nidagundi,Nidagundi,616.4,624.6,1,Normal
+2024,HOBLI,Vijayapura,Nidagundi,Nidagundi,616.4,618.4,0,Normal
+2024,HOBLI,Vijayapura,Nidagundi,Basavana Bagewadi,630.8,565.7,-10,Normal
+2024,HOBLI,Vijayapura,Nidagundi,Huvin Hipprgi,628.5,649.7,3,Normal
+2024,HOBLI,Vijayapura,Nidagundi,Muddebihal,614.6,681.0,11,Normal
+2024,HOBLI,Vijayapura,Nidagundi,Dhavalagi,624.3,645.9,3,Normal
+2024,TALUK,Vijayapura,Talikote,Talikote,585.8,585.5,0,Normal
+2024,HOBLI,Vijayapura,Talikote,Talikoti,585.8,632.0,8,Normal
+2024,HOBLI,Vijayapura,Talikote,Devarhipargi,597.5,425.5,-29,Deficient
+2024,HOBLI,Vijayapura,Talikote,Dhavalagi,612.4,629.1,3,Normal
+2024,HOBLI,Vijayapura,Talikote,Huvinhippargi,602.7,594.3,-1,Normal
+2024,TALUK,Vijayapura,Tikota,Tikota,405.5,766.4,89,Large Excess
+2024,HOBLI,Vijayapura,Tikota,Tikota,405.5,766.4,89,Large Excess
+2024,TALUK,Vijayapura,Kolhara,Kolhara,605.7,639.4,6,Normal
+2024,HOBLI,Vijayapura,Kolhara,Kolhar,605.7,639.4,6,Normal
+2024,TALUK,Vijayapura,Devara Hipparagi,Devara Hipparagi,630.3,600.2,-5,Normal
+2024,HOBLI,Vijayapura,Devara Hipparagi,Devar Hipparagi,630.3,586.0,-7,Normal
+2024,HOBLI,Vijayapura,Devara Hipparagi,Huvinhiprgi,625.3,676.1,8,Normal
+2024,TALUK,Vijayapura,Almel,Almel,646.0,606.3,-6,Normal
+2024,HOBLI,Vijayapura,Almel,Almel,646.0,605.9,-6,Normal
+2024,DISTRICT,Gadag,,Gadag,624.0,582.8,-7,Normal
+2024,TALUK,Gadag,Gadag,Gadag,658.9,567.1,-14,Normal
+2024,HOBLI,Gadag,Gadag,Gadag,658.9,578.3,-12,Normal
+2024,HOBLI,Gadag,Gadag,Betageri,655.2,558.3,-15,Normal
+2024,TALUK,Gadag,Mundargi,Mundargi,556.9,626.1,12,Normal
+2024,HOBLI,Gadag,Mundargi,Mundargi,556.9,649.3,17,Normal
+2024,HOBLI,Gadag,Mundargi,Dambal,461.7,612.8,33,Excess
+2024,TALUK,Gadag,Naragund,Naragund,556.8,552.6,-1,Normal
+2024,HOBLI,Gadag,Naragund,Naragund,556.8,683.0,23,Excess
+2024,HOBLI,Gadag,Naragund,Konnur,583.3,376.4,-35,Deficient
+2024,TALUK,Gadag,Ron,Ron,699.4,436.1,-38,Deficient
+2024,HOBLI,Gadag,Ron,Ron,699.4,590.8,-16,Normal
+2024,HOBLI,Gadag,Ron,Hole Alur,623.2,328.5,-47,Deficient
+2024,HOBLI,Gadag,Ron,Nargil,668.2,365.9,-45,Deficient
+2024,TALUK,Gadag,Shirahatti,Shirahatti,688.5,704.9,2,Normal
+2024,HOBLI,Gadag,Shirahatti,Shirahatti,688.5,704.9,2,Normal
+2024,TALUK,Gadag,Gajendragad,Gajendragad,737.1,651.3,-12,Normal
+2024,HOBLI,Gadag,Gajendragad,Rona,737.1,859.2,17,Normal
+2024,HOBLI,Gadag,Gajendragad,Nargil,660.1,579.3,-12,Normal
+2024,TALUK,Gadag,Laxmeshwar,Laxmeshwar,593.6,641.1,8,Normal
+2024,HOBLI,Gadag,Laxmeshwar,Laxmeshwar,593.6,641.1,8,Normal
+2024,DISTRICT,Haveri,,Haveri,799.5,899.4,12,Normal
+2024,TALUK,Haveri,Byadgi,Byadgi,678.6,1002.6,48,Excess
+2024,HOBLI,Haveri,Byadgi,Byadgi,678.6,929.5,37,Excess
+2024,HOBLI,Haveri,Byadgi,Kaginelli,796.7,1095.9,38,Excess
+2024,TALUK,Haveri,Hanagal,Hanagal,1043.7,1009.0,-3,Normal
+2024,HOBLI,Haveri,Hanagal,Hangal,1043.7,986.1,-6,Normal
+2024,HOBLI,Haveri,Hanagal,Akki Alur,1067.1,982.1,-8,Normal
+2024,HOBLI,Haveri,Hanagal,Bommanhalli,1024.3,1060.5,4,Normal
+2024,TALUK,Haveri,Haveri,Haveri,777.8,756.0,-3,Normal
+2024,HOBLI,Haveri,Haveri,Haveri,777.8,841.7,8,Normal
+2024,HOBLI,Haveri,Haveri,Guttal,618.6,718.0,16,Normal
+2024,HOBLI,Haveri,Haveri,Karajgi,732.2,733.9,0,Normal
+2024,TALUK,Haveri,Hirekerur,Hirekerur,856.2,961.5,12,Normal
+2024,HOBLI,Haveri,Hirekerur,Hirekerur,856.2,1001.2,17,Normal
+2024,HOBLI,Haveri,Hirekerur,Haunsbhavi,917.7,924.9,1,Normal
+2024,TALUK,Haveri,Ranebennur,Ranebennur,622.6,905.9,46,Excess
+2024,HOBLI,Haveri,Ranebennur,Ranebennur,622.6,895.3,44,Excess
+2024,HOBLI,Haveri,Ranebennur,Kuppelur,707.7,830.4,17,Normal
+2024,HOBLI,Haveri,Ranebennur,Medleri,650.6,971.4,49,Excess
+2024,TALUK,Haveri,Savanur,Savanur,698.9,786.2,12,Normal
+2024,HOBLI,Haveri,Savanur,Savanur,698.9,769.5,10,Normal
+2024,HOBLI,Haveri,Savanur,Hatti Mattur,716.5,800.4,12,Normal
+2024,TALUK,Haveri,Shiggaon,Shiggaon,813.6,922.4,13,Normal
+2024,HOBLI,Haveri,Shiggaon,Shiggaon,813.6,809.7,0,Normal
+2024,HOBLI,Haveri,Shiggaon,Bankapur,808.0,946.2,17,Normal
+2024,HOBLI,Haveri,Shiggaon,Dhundsi,955.2,987.0,3,Normal
+2024,TALUK,Haveri,Ratteehalli,Ratteehalli,789.5,908.4,15,Normal
+2024,HOBLI,Haveri,Ratteehalli,Rattihalli,789.5,921.6,17,Normal
+2024,HOBLI,Haveri,Ratteehalli,Hirekerur,829.5,852.8,3,Normal
+2024,DISTRICT,Dharwad,,Dharwad,787.1,890.2,13,Normal
+2024,TALUK,Dharwad,Dharwad,Dharwad,776.9,927.8,19,Normal
+2024,HOBLI,Dharwad,Dharwad,Dharwad,776.9,1028.1,32,Excess
+2024,HOBLI,Dharwad,Dharwad,Aminbhavi,792.2,747.0,-6,Normal
+2024,HOBLI,Dharwad,Dharwad,Garag,908.4,969.0,7,Normal
+2024,TALUK,Dharwad,Hubballi,Hubballi,771.6,732.2,-5,Normal
+2024,HOBLI,Dharwad,Hubballi,Chabbi,771.6,864.5,12,Normal
+2024,HOBLI,Dharwad,Hubballi,Shirguppi,699.1,650.0,-7,Normal
+2024,TALUK,Dharwad,Kalghatgi,Kalghatgi,978.5,1399.6,43,Excess
+2024,HOBLI,Dharwad,Kalghatgi,Kalghatgi,978.5,1510.5,54,Excess
+2024,HOBLI,Dharwad,Kalghatgi,Dummavada,851.6,1326.5,56,Excess
+2024,HOBLI,Dharwad,Kalghatgi,Tabkad Honnihalli,965.1,1349.7,40,Excess
+2024,TALUK,Dharwad,Kundgol,Kundgol,661.3,945.3,43,Excess
+2024,HOBLI,Dharwad,Kundgol,Kundgol,661.3,949.3,44,Excess
+2024,HOBLI,Dharwad,Kundgol,Saunshi,695.9,941.8,35,Excess
+2024,TALUK,Dharwad,Navalgund,Navalgund,630.6,606.9,-4,Normal
+2024,HOBLI,Dharwad,Navalgund,Moraba,630.6,606.7,-4,Normal
+2024,TALUK,Dharwad,Hubballi Nagara,Hubballi Nagara,745.8,544.4,-27,Deficient
+2024,HOBLI,Dharwad,Hubballi Nagara,Hubballi Urban,745.8,544.5,-27,Deficient
+2024,TALUK,Dharwad,Alnavara,Alnavara,1267.4,1613.2,27,Excess
+2024,HOBLI,Dharwad,Alnavara,Alnavar,1267.4,1613.2,27,Excess
+2024,TALUK,Dharwad,Annigeri,Annigeri,650.6,483.7,-26,Deficient
+2024,HOBLI,Dharwad,Annigeri,Annigeri,650.6,483.5,-26,Deficient
+2024,DISTRICT,Shivamogga,,Shivamogga,2324.5,2689.5,16,Normal
+2024,TALUK,Shivamogga,Bhadravathi,Bhadravathi,865.7,1105.3,28,Excess
+2024,HOBLI,Shivamogga,Bhadravathi,Bhadravathi_1,865.7,1162.6,34,Excess
+2024,HOBLI,Shivamogga,Bhadravathi,Bhadravathi_2,936.5,1280.7,37,Excess
+2024,HOBLI,Shivamogga,Bhadravathi,Hole Honnuru_1,882.5,1021.7,16,Normal
+2024,HOBLI,Shivamogga,Bhadravathi,Hole Honnuru_3,845.6,1142.2,35,Excess
+2024,HOBLI,Shivamogga,Bhadravathi,Hole Honnuru_2,799.5,931.1,16,Normal
+2024,HOBLI,Shivamogga,Bhadravathi,Kudligere,881.6,1053.2,19,Normal
+2024,TALUK,Shivamogga,Hosanagara,Hosanagara,3070.8,3602.8,17,Normal
+2024,HOBLI,Shivamogga,Hosanagara,Hosanagar,3070.8,3378.0,10,Normal
+2024,HOBLI,Shivamogga,Hosanagara,Huncha,2490.3,3227.8,30,Excess
+2024,HOBLI,Shivamogga,Hosanagara,Kerehalli,1764.0,1900.5,8,Normal
+2024,HOBLI,Shivamogga,Hosanagara,Nagar,5204.7,5009.6,-4,Normal
+2024,TALUK,Shivamogga,Sagara,Sagara,2494.5,3864.7,55,Excess
+2024,HOBLI,Shivamogga,Sagara,Sagar,2494.5,2378.4,-5,Normal
+2024,HOBLI,Shivamogga,Sagara,Anandapuram,1702.1,2218.7,30,Excess
+2024,HOBLI,Shivamogga,Sagara,Baragadde,4039.8,6101.5,51,Excess
+2024,HOBLI,Shivamogga,Sagara,Anahalli,2692.4,3279.5,22,Excess
+2024,HOBLI,Shivamogga,Sagara,Karauru,4154.3,4634.4,12,Normal
+2024,HOBLI,Shivamogga,Sagara,Talguppa,2709.9,3271.2,21,Excess
+2024,TALUK,Shivamogga,Shikaripura,Shikaripura,975.2,1350.4,38,Excess
+2024,HOBLI,Shivamogga,Shikaripura,Shikaripur,975.2,1525.0,56,Excess
+2024,HOBLI,Shivamogga,Shikaripura,Anjanapura,1170.9,1397.8,19,Normal
+2024,HOBLI,Shivamogga,Shikaripura,Husuru,861.4,1271.2,48,Excess
+2024,HOBLI,Shivamogga,Shikaripura,Udagani,1036.8,1383.3,33,Excess
+2024,HOBLI,Shivamogga,Shikaripura,Talagunda,1050.4,1257.8,20,Excess
+2024,TALUK,Shivamogga,Shivamogga,Shivamogga,842.3,1320.9,57,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Shivamogga_2,842.3,1128.8,34,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Shivamogga_1,1150.4,1355.3,18,Normal
+2024,HOBLI,Shivamogga,Shivamogga,Haranahalli,1037.2,1069.2,3,Normal
+2024,HOBLI,Shivamogga,Shivamogga,Holalur_1,842.5,1133.4,35,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Holalur_2,912.8,1094.9,20,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Kumsi,983.9,1500.1,52,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Nidige_1,950.8,1199.1,26,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Nidige_2,1192.9,1573.3,32,Excess
+2024,HOBLI,Shivamogga,Shivamogga,Ayanuru,1043.0,1356.2,30,Excess
+2024,TALUK,Shivamogga,Soraba,Soraba,1541.0,1849.1,20,Excess
+2024,HOBLI,Shivamogga,Soraba,Sorab,1541.0,1806.0,17,Normal
+2024,HOBLI,Shivamogga,Soraba,Anavatti,1260.8,1326.6,5,Normal
+2024,HOBLI,Shivamogga,Soraba,Chandragutti,2331.7,2550.8,9,Normal
+2024,HOBLI,Shivamogga,Soraba,Jade,1477.8,1305.1,-12,Normal
+2024,HOBLI,Shivamogga,Soraba,Kuppagadde,1417.3,1481.0,4,Normal
+2024,HOBLI,Shivamogga,Soraba,Ulvi,1895.2,2186.5,15,Normal
+2024,TALUK,Shivamogga,Tirthahalli,Tirthahalli,2866.8,3671.5,28,Excess
+2024,HOBLI,Shivamogga,Tirthahalli,Thirthahalli,2866.8,3521.2,23,Excess
+2024,HOBLI,Shivamogga,Tirthahalli,Agrahara,2713.1,3722.9,37,Excess
+2024,HOBLI,Shivamogga,Tirthahalli,Agumbe,7565.0,5383.1,-29,Deficient
+2024,HOBLI,Shivamogga,Tirthahalli,Mandagadde,1690.0,2493.5,48,Excess
+2024,HOBLI,Shivamogga,Tirthahalli,Malur,2578.7,3299.9,28,Excess
+2024,DISTRICT,Hassan,,Hassan,1142.0,1579.8,38,Excess
+2024,TALUK,Hassan,Alur,Alur,1149.0,1667.1,45,Excess
+2024,HOBLI,Hassan,Alur,Alur,1149.0,1292.8,13,Normal
+2024,HOBLI,Hassan,Alur,Kenchamman Hoskota,1813.9,2256.1,24,Excess
+2024,HOBLI,Hassan,Alur,Kundur,1136.0,1260.2,11,Normal
+2024,HOBLI,Hassan,Alur,Palya,1581.1,1647.4,4,Normal
+2024,TALUK,Hassan,Arkalgud,Arkalgud,885.3,1220.3,38,Excess
+2024,HOBLI,Hassan,Arkalgud,Arkalgud,885.3,1203.0,36,Excess
+2024,HOBLI,Hassan,Arkalgud,Doddamagge,898.8,1187.2,32,Excess
+2024,HOBLI,Hassan,Arkalgud,Konanuru,797.1,1199.8,51,Excess
+2024,HOBLI,Hassan,Arkalgud,Mallipatna,1246.0,1577.2,27,Excess
+2024,HOBLI,Hassan,Arkalgud,Ramanathapura,829.7,965.3,16,Normal
+2024,TALUK,Hassan,Arasikere,Arasikere,695.6,929.4,34,Excess
+2024,HOBLI,Hassan,Arasikere,Arasikere,695.6,811.8,17,Normal
+2024,HOBLI,Hassan,Arasikere,Banavara,564.5,988.4,75,Large Excess
+2024,HOBLI,Hassan,Arasikere,Gandasi,661.0,1011.3,53,Excess
+2024,HOBLI,Hassan,Arasikere,Javagal,934.5,934.9,0,Normal
+2024,HOBLI,Hassan,Arasikere,Kanakatte,595.7,921.4,55,Excess
+2024,TALUK,Hassan,Belur,Belur,1022.1,1505.8,47,Excess
+2024,HOBLI,Hassan,Belur,Belur,1022.1,1318.2,29,Excess
+2024,HOBLI,Hassan,Belur,Arehalli,1789.6,2239.7,25,Excess
+2024,HOBLI,Hassan,Belur,Bikkodu,1213.4,1830.9,51,Excess
+2024,HOBLI,Hassan,Belur,Halebeedu,1305.2,1069.3,-18,Normal
+2024,HOBLI,Hassan,Belur,Madihalli,1005.0,1265.1,26,Excess
+2024,TALUK,Hassan,Channarayapatna,Channarayapatna,689.5,1065.8,55,Excess
+2024,HOBLI,Hassan,Channarayapatna,Channarayapatna,689.5,1148.0,66,Large Excess
+2024,HOBLI,Hassan,Channarayapatna,Baguru,778.5,973.0,25,Excess
+2024,HOBLI,Hassan,Channarayapatna,Dandiganahalli,692.0,1036.1,50,Excess
+2024,HOBLI,Hassan,Channarayapatna,Hirisave,768.3,1136.8,48,Excess
+2024,HOBLI,Hassan,Channarayapatna,Nuggehalli,669.0,996.4,49,Excess
+2024,HOBLI,Hassan,Channarayapatna,Shravan Belgola,733.0,1147.2,57,Excess
+2024,TALUK,Hassan,Hassan,Hassan,845.6,1166.4,38,Excess
+2024,HOBLI,Hassan,Hassan,Hassan,845.6,1147.2,36,Excess
+2024,HOBLI,Hassan,Hassan,Dudda,652.9,1042.2,60,Large Excess
+2024,HOBLI,Hassan,Hassan,Kattya,692.6,1218.0,76,Large Excess
+2024,HOBLI,Hassan,Hassan,Salagame,816.2,1370.6,68,Large Excess
+2024,HOBLI,Hassan,Hassan,Shantigrama,661.4,1109.2,68,Large Excess
+2024,TALUK,Hassan,Holenarasipura,Holenarasipura,768.8,1081.6,41,Excess
+2024,HOBLI,Hassan,Holenarasipura,Holenarasipur,768.8,1100.9,43,Excess
+2024,HOBLI,Hassan,Holenarasipura,Halekote,778.4,1035.0,33,Excess
+2024,HOBLI,Hassan,Holenarasipura,Halli Mysore,767.4,1099.5,43,Excess
+2024,TALUK,Hassan,Sakaleshpura,Sakaleshpura,2246.7,3842.6,71,Large Excess
+2024,HOBLI,Hassan,Sakaleshpura,Sakaleshpur,2246.7,3305.5,47,Excess
+2024,HOBLI,Hassan,Sakaleshpura,Balegodu,1789.7,2302.4,29,Excess
+2024,HOBLI,Hassan,Sakaleshpura,Hanbalu,2377.3,4059.7,71,Large Excess
+2024,HOBLI,Hassan,Sakaleshpura,Hettur,2218.3,4857.1,119,Large Excess
+2024,HOBLI,Hassan,Sakaleshpura,Yaslur,1783.4,3494.1,96,Large Excess
+2024,DISTRICT,Chikkamagaluru,,Chikkamagaluru,1832.9,2250.1,23,Excess
+2024,TALUK,Chikkamagaluru,Chikkamagaluru,Chikkamagaluru,835.8,1886.2,126,Large Excess
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Chikkamagaluru,835.8,1459.8,75,Large Excess
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Amble,937.9,1232.6,31,Excess
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Aldur,1642.9,2163.7,32,Excess
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Sangmeswrpet,2338.6,2285.1,-2,Normal
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Lakya,1283.3,1271.9,-1,Normal
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Avathi,1340.4,2318.1,73,Large Excess
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Jagar,909.4,2255.5,148,Large Excess
+2024,HOBLI,Chikkamagaluru,Chikkamagaluru,Vasthare,1048.2,2163.8,106,Large Excess
+2024,TALUK,Chikkamagaluru,Kadur,Kadur,638.9,953.9,49,Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Kadur,638.9,925.9,45,Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Birur,676.5,1114.1,65,Large Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Hirenalluru,643.0,876.0,36,Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Sakkarepatna,813.5,1010.6,24,Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Shingatagere,630.1,1010.0,60,Large Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Yagati,632.5,771.4,22,Excess
+2024,HOBLI,Chikkamagaluru,Kadur,Panchanahalli,593.9,907.1,53,Excess
+2024,TALUK,Chikkamagaluru,Koppa,Koppa,2906.9,3793.1,30,Excess
+2024,HOBLI,Chikkamagaluru,Koppa,Koppa,2906.9,3973.2,37,Excess
+2024,HOBLI,Chikkamagaluru,Koppa,Hariharpur,3046.1,4337.2,42,Excess
+2024,HOBLI,Chikkamagaluru,Koppa,Meguda,3121.6,3358.3,8,Normal
+2024,TALUK,Chikkamagaluru,Mudigere,Mudigere,2315.3,3146.4,36,Excess
+2024,HOBLI,Chikkamagaluru,Mudigere,Mudigere,2315.3,2200.4,-5,Normal
+2024,HOBLI,Chikkamagaluru,Mudigere,Bankal,4139.1,3365.8,-19,Normal
+2024,HOBLI,Chikkamagaluru,Mudigere,Gonibidu,2268.2,3368.7,49,Excess
+2024,HOBLI,Chikkamagaluru,Mudigere,Baluru,3866.0,3287.4,-15,Normal
+2024,TALUK,Chikkamagaluru,Narasimharajapura,Narasimharajapura,1609.0,2576.0,60,Large Excess
+2024,HOBLI,Chikkamagaluru,Narasimharajapura,Narasimharajapur,1609.0,2259.8,40,Excess
+2024,HOBLI,Chikkamagaluru,Narasimharajapura,Balehonnur,2590.1,2965.3,14,Normal
+2024,TALUK,Chikkamagaluru,Sringeri,Sringeri,3887.2,4966.5,28,Excess
+2024,HOBLI,Chikkamagaluru,Sringeri,Sringeri,3887.2,4370.2,12,Normal
+2024,HOBLI,Chikkamagaluru,Sringeri,Kigga,4377.0,5160.0,18,Normal
+2024,TALUK,Chikkamagaluru,Tarikere,Tarikere,914.3,1296.6,42,Excess
+2024,HOBLI,Chikkamagaluru,Tarikere,Tarikere,914.3,1281.1,40,Excess
+2024,HOBLI,Chikkamagaluru,Tarikere,Amrutapur,881.7,1177.3,34,Excess
+2024,HOBLI,Chikkamagaluru,Tarikere,Lakavalli,1256.0,1444.9,15,Normal
+2024,HOBLI,Chikkamagaluru,Tarikere,Lingadahalli,825.5,1275.3,54,Excess
+2024,TALUK,Chikkamagaluru,Ajjampura,Ajjampura,668.6,931.3,39,Excess
+2024,HOBLI,Chikkamagaluru,Ajjampura,Ajjampura,668.6,969.0,45,Excess
+2024,HOBLI,Chikkamagaluru,Ajjampura,Chowlahiriyur,607.1,820.9,35,Excess
+2024,HOBLI,Chikkamagaluru,Ajjampura,Shivani,575.4,947.3,65,Large Excess
+2024,HOBLI,Chikkamagaluru,Ajjampura,Amrutpura,698.2,1127.6,62,Large Excess
+2024,HOBLI,Chikkamagaluru,Ajjampura,Hirenalluru,644.9,932.2,45,Excess
+2024,TALUK,Chikkamagaluru,Kalasa,Kalasa,3491.3,4057.0,16,Normal
+2024,HOBLI,Chikkamagaluru,Kalasa,Kalasa,3491.3,4057.0,16,Normal
+2024,DISTRICT,Kodagu,,Kodagu,2729.4,3052.2,12,Normal
+2024,TALUK,Kodagu,Madikeri,Madikeri,3265.2,4029.4,23,Excess
+2024,HOBLI,Kodagu,Madikeri,Madikeri,3265.2,3878.0,19,Normal
+2024,HOBLI,Kodagu,Madikeri,Bhagamandala,5783.9,4481.0,-23,Deficient
+2024,HOBLI,Kodagu,Madikeri,Napoklu,2832.8,3432.1,21,Excess
+2024,HOBLI,Kodagu,Madikeri,Sampaje,4417.5,4349.4,-2,Normal
+2024,TALUK,Kodagu,Somwarpet,Somwarpet,2098.1,2728.8,30,Excess
+2024,HOBLI,Kodagu,Somwarpet,Somwarpet,2098.1,2429.9,16,Normal
+2024,HOBLI,Kodagu,Somwarpet,Kodlipet,1613.1,2098.3,30,Excess
+2024,HOBLI,Kodagu,Somwarpet,Sanivarsante,1862.9,2017.2,8,Normal
+2024,HOBLI,Kodagu,Somwarpet,Santhahalli,2294.3,3583.6,56,Excess
+2024,TALUK,Kodagu,Virajpet,Virajpet,2467.6,2690.3,9,Normal
+2024,HOBLI,Kodagu,Virajpet,Virajpet,2467.6,3146.4,28,Excess
+2024,HOBLI,Kodagu,Virajpet,Ammati,1992.5,2423.2,22,Excess
+2024,TALUK,Kodagu,Kushalanagara,Kushalanagara,978.5,2017.0,106,Large Excess
+2024,HOBLI,Kodagu,Kushalanagara,Kushalnagar,978.5,1952.9,100,Large Excess
+2024,HOBLI,Kodagu,Kushalanagara,Suntikoppa,1589.1,2852.8,80,Large Excess
+2024,TALUK,Kodagu,Ponnampete,Ponnampete,2267.2,2464.9,9,Normal
+2024,HOBLI,Kodagu,Ponnampete,Ponnampet,2267.2,2055.2,-9,Normal
+2024,HOBLI,Kodagu,Ponnampete,Blale,1798.5,2005.2,11,Normal
+2024,HOBLI,Kodagu,Ponnampete,Hudakere,2402.7,3235.6,35,Excess
+2024,HOBLI,Kodagu,Ponnampete,Srimangala,2753.2,2541.3,-8,Normal
+2024,DISTRICT,Dakshina Kannada,,Dakshina Kannada,4006.4,4665.9,16,Normal
+2024,TALUK,Dakshina Kannada,Beltangadi,Beltangadi,4426.4,5133.5,16,Normal
+2024,HOBLI,Dakshina Kannada,Beltangadi,Belthangady,4426.4,5007.0,13,Normal
+2024,HOBLI,Dakshina Kannada,Beltangadi,Kokkada,4261.4,5088.9,19,Normal
+2024,HOBLI,Dakshina Kannada,Beltangadi,Venur,4117.3,5465.9,33,Excess
+2024,TALUK,Dakshina Kannada,Bantwal,Bantwal,3856.4,4255.8,10,Normal
+2024,HOBLI,Dakshina Kannada,Bantwal,Bantwal,3856.4,4550.2,18,Normal
+2024,HOBLI,Dakshina Kannada,Bantwal,Pane Mangalore,3884.9,4370.3,12,Normal
+2024,HOBLI,Dakshina Kannada,Bantwal,Vittal,3984.1,3934.1,-1,Normal
+2024,TALUK,Dakshina Kannada,Mangaluru,Mangaluru,3608.9,4025.2,12,Normal
+2024,HOBLI,Dakshina Kannada,Mangaluru,Mangaluru_A,3630.7,3668.8,1,Normal
+2024,HOBLI,Dakshina Kannada,Mangaluru,Gurpur,3801.3,4019.7,6,Normal
+2024,HOBLI,Dakshina Kannada,Mangaluru,Suratkal,3834.2,4212.0,10,Normal
+2024,TALUK,Dakshina Kannada,Puttur,Puttur,4058.3,4262.1,5,Normal
+2024,HOBLI,Dakshina Kannada,Puttur,Puttur,4058.3,4224.3,4,Normal
+2024,HOBLI,Dakshina Kannada,Puttur,Uppinangadi,3939.3,4378.4,11,Normal
+2024,TALUK,Dakshina Kannada,Sulya,Sulya,3592.0,4668.5,30,Excess
+2024,HOBLI,Dakshina Kannada,Sulya,Sullia,3592.0,4458.5,24,Excess
+2024,HOBLI,Dakshina Kannada,Sulya,Panaje,4014.6,5139.6,28,Excess
+2024,TALUK,Dakshina Kannada,Mudabidri,Mudabidri,4009.5,5043.6,26,Excess
+2024,HOBLI,Dakshina Kannada,Mudabidri,Mudbidri,4009.5,5043.9,26,Excess
+2024,TALUK,Dakshina Kannada,Kadaba,Kadaba,4135.2,4759.3,15,Normal
+2024,HOBLI,Dakshina Kannada,Kadaba,Kadaba,4135.2,4858.0,17,Normal
+2024,HOBLI,Dakshina Kannada,Kadaba,Panaje,4214.9,4753.5,13,Normal
+2024,HOBLI,Dakshina Kannada,Kadaba,Uppinangadi,3494.9,4568.3,31,Excess
+2024,TALUK,Dakshina Kannada,Mulki,Mulki,3788.0,4180.0,10,Normal
+2024,HOBLI,Dakshina Kannada,Mulki,Mulki,3788.0,4180.0,10,Normal
+2024,HOBLI,Dakshina Kannada,Mulki,Ullala,3609.2,4038.4,12,Normal
+2024,TALUK,Dakshina Kannada,Mangaluru_B,Mangaluru_B,3608.9,4038.4,12,Normal
+2024,DISTRICT,Udupi,,Udupi,4534.6,5261.4,16,Normal
+2024,TALUK,Udupi,Karkala,Karkala,4776.6,5273.0,10,Normal
+2024,HOBLI,Udupi,Karkala,Karkala,4776.6,5135.0,8,Normal
+2024,HOBLI,Udupi,Karkala,Ajekar,4755.1,5529.5,16,Normal
+2024,TALUK,Udupi,Kundapur,Kundapur,3786.0,5580.7,47,Excess
+2024,HOBLI,Udupi,Kundapur,Kundapur,3786.0,4949.8,31,Excess
+2024,HOBLI,Udupi,Kundapur,Vandse,4259.6,5915.1,39,Excess
+2024,TALUK,Udupi,Udupi,Udupi,3861.5,4524.8,17,Normal
+2024,HOBLI,Udupi,Udupi,Udupi,3861.5,4544.7,18,Normal
+2024,HOBLI,Udupi,Udupi,Brahmavara,4333.0,4484.2,3,Normal
+2024,TALUK,Udupi,Bynduru,Bynduru,4428.1,5287.9,19,Normal
+2024,HOBLI,Udupi,Bynduru,Bainduru,4428.1,5287.9,19,Normal
+2024,TALUK,Udupi,Bramhavara,Bramhavara,4042.9,4797.1,19,Normal
+2024,HOBLI,Udupi,Bramhavara,Brahmavara,4042.9,4924.7,22,Excess
+2024,HOBLI,Udupi,Bramhavara,Kota,3524.7,4665.0,32,Excess
+2024,TALUK,Udupi,Kapu,Kapu,3757.0,4388.6,17,Normal
+2024,HOBLI,Udupi,Kapu,Kapu,3757.0,4388.7,17,Normal
+2024,TALUK,Udupi,Hebri,Hebri,5801.8,5920.5,2,Normal
+2024,HOBLI,Udupi,Hebri,Ajekar,5801.8,5847.5,1,Normal
+2024,HOBLI,Udupi,Hebri,Kundapur,5072.7,6173.1,22,Excess
+2024,DISTRICT,Uttara Kannada,,Uttara Kannada,2936.3,3914.2,33,Excess
+2024,TALUK,Uttara Kannada,Ankola,Ankola,3532.2,5292.6,50,Excess
+2024,HOBLI,Uttara Kannada,Ankola,Ankola,3532.2,5435.7,54,Excess
+2024,HOBLI,Uttara Kannada,Ankola,Belikere,3516.8,4948.7,41,Excess
+2024,HOBLI,Uttara Kannada,Ankola,Basagod,3438.0,5148.4,50,Excess
+2024,HOBLI,Uttara Kannada,Ankola,Blale,3363.5,5424.4,61,Large Excess
+2024,TALUK,Uttara Kannada,Bhatkal,Bhatkal,4322.3,5265.1,22,Excess
+2024,HOBLI,Uttara Kannada,Bhatkal,Susgadi,4322.3,5460.4,26,Excess
+2024,HOBLI,Uttara Kannada,Bhatkal,Mavalli,4071.1,5026.7,23,Excess
+2024,TALUK,Uttara Kannada,Haliyal,Haliyal,1339.0,1494.3,12,Normal
+2024,HOBLI,Uttara Kannada,Haliyal,Haliyal,1339.0,1503.9,12,Normal
+2024,HOBLI,Uttara Kannada,Haliyal,Murkvad,1061.4,1335.8,26,Excess
+2024,HOBLI,Uttara Kannada,Haliyal,Sambrani,1259.9,1531.1,22,Excess
+2024,HOBLI,Uttara Kannada,Haliyal,Dandeli,1370.7,1906.4,39,Excess
+2024,TALUK,Uttara Kannada,Honnavar,Honnavar,3727.9,5474.7,47,Excess
+2024,HOBLI,Uttara Kannada,Honnavar,Honnavar,3727.9,5299.1,42,Excess
+2024,HOBLI,Uttara Kannada,Honnavar,Manki,3667.6,4908.3,34,Excess
+2024,HOBLI,Uttara Kannada,Honnavar,Mavinakurvei,3869.0,5900.6,53,Excess
+2024,TALUK,Uttara Kannada,Karwar,Karwar,3233.6,5042.4,56,Excess
+2024,HOBLI,Uttara Kannada,Karwar,Baad,3233.6,4742.6,47,Excess
+2024,HOBLI,Uttara Kannada,Karwar,Ghadasaya,3611.4,5325.1,47,Excess
+2024,HOBLI,Uttara Kannada,Karwar,Kinnar,3447.7,4999.6,45,Excess
+2024,HOBLI,Uttara Kannada,Karwar,Savantvada,3329.4,4361.2,31,Excess
+2024,TALUK,Uttara Kannada,Kumta,Kumta,3522.6,5009.0,42,Excess
+2024,HOBLI,Uttara Kannada,Kumta,Kumta,3522.6,5503.5,56,Excess
+2024,HOBLI,Uttara Kannada,Kumta,Gokarna,3243.4,5080.6,57,Excess
+2024,HOBLI,Uttara Kannada,Kumta,Kujahalli,3977.6,5276.8,33,Excess
+2024,HOBLI,Uttara Kannada,Kumta,Mirjan,3525.7,4693.6,33,Excess
+2024,TALUK,Uttara Kannada,Mundgod,Mundgod,1437.6,1762.5,23,Excess
+2024,HOBLI,Uttara Kannada,Mundgod,Mundgod,1437.6,1761.6,23,Excess
+2024,HOBLI,Uttara Kannada,Mundgod,Pala,1243.0,1763.9,42,Excess
+2024,TALUK,Uttara Kannada,Siddapur,Siddapur,3016.0,4775.5,58,Excess
+2024,HOBLI,Uttara Kannada,Siddapur,Umbalamani,4455.6,4423.1,-1,Normal
+2024,HOBLI,Uttara Kannada,Siddapur,Siddapura,3016.0,3849.5,28,Excess
+2024,HOBLI,Uttara Kannada,Siddapur,Kodkani,3370.5,5714.1,70,Large Excess
+2024,TALUK,Uttara Kannada,Sirsi,Sirsi,2359.9,3844.0,63,Large Excess
+2024,HOBLI,Uttara Kannada,Sirsi,Sirsi,2359.9,3111.3,32,Excess
+2024,HOBLI,Uttara Kannada,Sirsi,Banavasi,1510.9,2332.3,54,Excess
+2024,HOBLI,Uttara Kannada,Sirsi,Hulekal,2174.3,4275.3,97,Large Excess
+2024,HOBLI,Uttara Kannada,Sirsi,Sampakanda,4140.6,5035.6,22,Excess
+2024,TALUK,Uttara Kannada,Supa,Supa,2578.3,3602.7,40,Excess
+2024,HOBLI,Uttara Kannada,Supa,Supa,2578.3,3003.2,16,Normal
+2024,HOBLI,Uttara Kannada,Supa,Kasalrock,4657.9,3876.5,-17,Normal
+2024,HOBLI,Uttara Kannada,Supa,Kumbarawada,3072.6,3850.1,25,Excess
+2024,TALUK,Uttara Kannada,Yellapur,Yellapur,2667.9,3061.4,15,Normal
+2024,HOBLI,Uttara Kannada,Yellapur,Yellapur,2667.9,3650.1,37,Excess
+2024,HOBLI,Uttara Kannada,Yellapur,Manchikeri,1989.4,2552.1,28,Excess
+2024,TALUK,Uttara Kannada,Dandelli,Dandelli,1539.5,2123.4,38,Excess
+2024,HOBLI,Uttara Kannada,Dandelli,Dhandeli,1539.5,2120.8,38,Excess
+2024,DISTRICT,Yadgir,,Yadgir,718.8,736.0,2,Normal
+2024,TALUK,Yadgir,Shahapur,Shahapur,848.4,702.3,-17,Normal
+2024,HOBLI,Yadgir,Shahapur,Shahpur,848.4,687.7,-19,Normal
+2024,HOBLI,Yadgir,Shahapur,Doranahlli,815.7,708.5,-13,Normal
+2024,HOBLI,Yadgir,Shahapur,Gogi,775.2,713.2,-8,Normal
+2024,HOBLI,Yadgir,Shahapur,Hayyalbuzurg,735.7,709.9,-4,Normal
+2024,TALUK,Yadgir,Shorapur,Shorapur,722.1,694.4,-4,Normal
+2024,HOBLI,Yadgir,Shorapur,Shorapur,722.1,781.3,8,Normal
+2024,HOBLI,Yadgir,Shorapur,Kakkeri,575.8,671.0,17,Normal
+2024,HOBLI,Yadgir,Shorapur,Kembhavi,583.6,630.4,8,Normal
+2024,TALUK,Yadgir,Yadgir,Yadgir,908.4,821.1,-10,Normal
+2024,HOBLI,Yadgir,Yadgir,Yadgir,908.4,902.1,-1,Normal
+2024,HOBLI,Yadgir,Yadgir,Balichakra,773.2,818.4,6,Normal
+2024,HOBLI,Yadgir,Yadgir,Hattikuni,854.5,814.1,-5,Normal
+2024,HOBLI,Yadgir,Yadgir,Saidapur,753.6,752.4,0,Normal
+2024,TALUK,Yadgir,Gurumithakala,Gurumithakala,773.2,912.3,18,Normal
+2024,HOBLI,Yadgir,Gurumithakala,Gurmitakal,773.2,999.3,29,Excess
+2024,HOBLI,Yadgir,Gurumithakala,Konakal,776.1,872.4,12,Normal
+2024,HOBLI,Yadgir,Gurumithakala,Balichakra,762.7,832.2,9,Normal
+2024,TALUK,Yadgir,Vadagera,Vadagera,616.9,655.4,6,Normal
+2024,HOBLI,Yadgir,Vadagera,Wadagera,616.9,611.4,-1,Normal
+2024,HOBLI,Yadgir,Vadagera,Doranahlli,715.5,755.9,6,Normal
+2024,HOBLI,Yadgir,Vadagera,Hayyala Buzurg,722.5,667.7,-8,Normal
+2024,TALUK,Yadgir,Hunisigi,Hunisigi,500.5,642.7,28,Excess
+2024,HOBLI,Yadgir,Hunisigi,Hunasagi,500.5,646.4,29,Excess
+2024,HOBLI,Yadgir,Hunisigi,Kodekal,621.7,628.9,1,Normal
+2024,HOBLI,Yadgir,Hunisigi,Kakkera,571.4,714.6,25,Excess
+2024,DISTRICT,Vijayanagar,,Vijayanagar,642.5,763.7,19,Normal
+2024,TALUK,Vijayanagar,Hosapete,Hosapete,703.8,939.7,34,Excess
+2024,HOBLI,Vijayanagar,Hosapete,Hospet,703.8,881.3,25,Excess
+2024,HOBLI,Vijayanagar,Hosapete,Kamalapura,658.3,1002.7,52,Excess
+2024,HOBLI,Vijayanagar,Hosapete,Mariyammanahalli,673.1,904.9,34,Excess
+2024,TALUK,Vijayanagar,Hadagali,Hadagali,641.0,557.0,-13,Normal
+2024,HOBLI,Vijayanagar,Hadagali,Hadagali,641.0,487.2,-24,Deficient
+2024,HOBLI,Vijayanagar,Hadagali,Hirehadagalli,652.1,724.5,11,Normal
+2024,HOBLI,Vijayanagar,Hadagali,Ittigi,666.5,490.6,-26,Deficient
+2024,TALUK,Vijayanagar,Hagaribommanahalli,Hagaribommanahalli,634.6,747.8,18,Normal
+2024,HOBLI,Vijayanagar,Hagaribommanahalli,Hagaribommanahalli,634.6,757.3,19,Normal
+2024,HOBLI,Vijayanagar,Hagaribommanahalli,Hampa Sagara,616.9,810.0,31,Excess
+2024,HOBLI,Vijayanagar,Hagaribommanahalli,Tambarahalli,627.6,823.8,31,Excess
+2024,HOBLI,Vijayanagar,Hagaribommanahalli,Kogali,616.9,579.5,-6,Normal
+2024,TALUK,Vijayanagar,Harappanahalli,Harappanahalli,755.1,713.5,-6,Normal
+2024,HOBLI,Vijayanagar,Harappanahalli,Harapanahalli,755.1,525.3,-30,Deficient
+2024,HOBLI,Vijayanagar,Harappanahalli,Arasikere,656.3,805.2,23,Excess
+2024,HOBLI,Vijayanagar,Harappanahalli,Chigateri,761.2,747.2,-2,Normal
+2024,HOBLI,Vijayanagar,Harappanahalli,Telagi,665.5,770.3,16,Normal
+2024,TALUK,Vijayanagar,Kotturu,Kotturu,533.0,959.2,80,Large Excess
+2024,HOBLI,Vijayanagar,Kotturu,Kotturu,533.0,989.4,86,Large Excess
+2024,HOBLI,Vijayanagar,Kotturu,Kogali,641.4,821.4,28,Excess
+2024,HOBLI,Vijayanagar,Kotturu,Hoshalli,560.4,983.4,75,Large Excess
+2024,TALUK,Vijayanagar,Kudligi,Kudligi,589.8,832.4,41,Excess
+2024,HOBLI,Vijayanagar,Kudligi,Kudligi,589.8,903.2,53,Excess
+2024,HOBLI,Vijayanagar,Kudligi,Gudekote,521.4,724.3,39,Excess
+2024,HOBLI,Vijayanagar,Kudligi,Hosahalli,504.0,926.1,84,Large Excess
+2024,REGION,Vijayanagar,Kudligi,1.SIK,714.1,874.5,22,Excess
+2024,REGION,Vijayanagar,Kudligi,2.NIK,701.6,782.9,12,Normal
+2024,REGION,Vijayanagar,Kudligi,3.MALNAD,1949.6,2341.9,20,Excess
+2024,REGION,Vijayanagar,Kudligi,4.COASTAL,3518.3,4366.6,24,Excess
+2024,REGION,Vijayanagar,Kudligi,State,1153.4,1374.7,19,Normal

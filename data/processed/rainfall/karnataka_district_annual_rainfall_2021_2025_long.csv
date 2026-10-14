@@ -1,0 +1,125 @@
+year,district_name,annual_normal_mm,annual_actual_mm,annual_dep_pct,classification
+2021,Bagalkote,582,550.0,-6,Normal
+2022,Bagalkote,582,807.0,39,Excess
+2024,Bagalkote,582,603.0,4,Normal
+2025,Bagalkote,582,725.0,25,Excess
+2021,Ballari,599,684.0,14,Normal
+2022,Ballari,599,795.0,33,Excess
+2024,Ballari,600,663.0,11,Normal
+2025,Ballari,599,529.0,-12,Normal
+2021,Belagavi,826,983.0,19,Normal
+2022,Belagavi,826,1194.0,45,Excess
+2024,Belagavi,826,1165.0,41,Excess
+2025,Belagavi,826,1038.0,26,Excess
+2021,Bengaluru Rural,798,1256.0,57,Excess
+2022,Bengaluru Rural,798,1498.0,88,Large Excess
+2024,Bengaluru Rural,799,884.0,11,Normal
+2025,Bengaluru Rural,798,849.0,6,Normal
+2021,Bengaluru Urban,846,1128.0,33,Excess
+2022,Bengaluru Urban,846,1456.0,72,Large Excess
+2024,Bengaluru Urban,846,934.0,10,Normal
+2025,Bengaluru Urban,846,879.0,4,Normal
+2021,Bidar,838,907.0,8,Normal
+2022,Bidar,838,952.0,14,Normal
+2024,Bidar,838,839.0,0,Normal
+2025,Bidar,838,1011.0,21,Excess
+2021,Chamarajanagara,787,906.0,15,Normal
+2022,Chamarajanagara,787,1159.0,47,Excess
+2024,Chamarajanagara,787,836.0,6,Normal
+2025,Chamarajanagara,787,598.0,-24,Deficient
+2021,Chikkaballapura,736,1269.0,73,Large Excess
+2022,Chikkaballapura,736,1134.0,54,Excess
+2024,Chikkaballapura,736,755.0,3,Normal
+2025,Chikkaballapura,736,769.0,4,Normal
+2021,Chikkamagaluru,1833,2070.0,13,Normal
+2022,Chikkamagaluru,1833,2278.0,24,Excess
+2024,Chikkamagaluru,1833,2250.0,23,Excess
+2025,Chikkamagaluru,1833,1972.0,8,Normal
+2021,Chitradurga,540,872.0,61,Large Excess
+2022,Chitradurga,540,839.0,55,Excess
+2024,Chitradurga,540,698.0,29,Excess
+2025,Chitradurga,540,515.0,-5,Normal
+2021,Dakshina Kannada,4006,3963.0,-1,Normal
+2022,Dakshina Kannada,4006,4383.0,9,Normal
+2024,Dakshina Kannada,4006,4666.0,16,Normal
+2025,Dakshina Kannada,4006,4910.0,23,Excess
+2021,Davanagere,659,987.0,50,Excess
+2022,Davanagere,659,1162.0,76,Large Excess
+2024,Davanagere,659,952.0,45,Excess
+2025,Davanagere,659,727.0,10,Normal
+2021,Dharwad,787,965.0,23,Excess
+2022,Dharwad,787,1051.0,34,Excess
+2024,Dharwad,787,890.0,13,Normal
+2025,Dharwad,787,853.0,8,Normal
+2021,Gadag,624,678.0,9,Normal
+2022,Gadag,624,995.0,60,Large Excess
+2024,Gadag,624,583.0,-7,Normal
+2025,Gadag,624,668.0,7,Normal
+2021,Hassan,1142,1363.0,19,Normal
+2022,Hassan,1142,1701.0,49,Excess
+2024,Hassan,1142,1580.0,38,Excess
+2025,Hassan,1142,1480.0,30,Excess
+2021,Haveri,800,1013.0,27,Excess
+2022,Haveri,800,1023.0,28,Excess
+2024,Haveri,800,899.0,12,Normal
+2025,Haveri,800,680.0,-15,Normal
+2021,Kalaburagi,770,943.0,22,Excess
+2022,Kalaburagi,770,847.0,10,Normal
+2024,Kalaburagi,771,831.0,8,Normal
+2025,Kalaburagi,770,1068.0,39,Excess
+2021,Kodagu,2729,2656.0,-3,Normal
+2022,Kodagu,2729,3036.0,11,Normal
+2024,Kodagu,2729,3052.0,12,Normal
+2025,Kodagu,2729,3169.0,16,Normal
+2021,Kolar,735,1316.0,79,Large Excess
+2022,Kolar,735,1250.0,70,Large Excess
+2024,Kolar,735,780.0,6,Normal
+2025,Kolar,735,927.0,26,Excess
+2021,Koppala,614,640.0,4,Normal
+2022,Koppala,614,744.0,21,Excess
+2024,Koppala,614,598.0,-3,Normal
+2025,Koppala,614,663.0,8,Normal
+2021,Mandya,699,1011.0,45,Excess
+2022,Mandya,699,1484.0,112,Large Excess
+2024,Mandya,699,869.0,24,Excess
+2025,Mandya,699,757.0,8,Normal
+2021,Mysuru,837,955.0,14,Normal
+2022,Mysuru,837,1318.0,57,Excess
+2024,Mysuru,837,965.0,15,Normal
+2025,Mysuru,837,803.0,-4,Normal
+2021,Raichur,654,624.0,-5,Normal
+2022,Raichur,654,805.0,23,Excess
+2024,Raichur,655,637.0,-3,Normal
+2025,Raichur,654,801.0,22,Excess
+2021,Ramanagara,840,1087.0,29,Excess
+2022,Ramanagara,840,1512.0,80,Large Excess
+2024,Ramanagara,840,878.0,4,Normal
+2025,Ramanagara,840,865.0,3,Normal
+2021,Shivamogga,2325,2444.0,5,Normal
+2022,Shivamogga,2325,2439.0,5,Normal
+2024,Shivamogga,2325,2690.0,16,Normal
+2025,Shivamogga,2325,2282.0,-2,Normal
+2021,Tumakuru,669,1109.0,66,Large Excess
+2022,Tumakuru,669,1358.0,103,Large Excess
+2024,Tumakuru,669,1016.0,52,Excess
+2025,Tumakuru,669,785.0,17,Normal
+2021,Udupi,4535,4797.0,6,Normal
+2022,Udupi,4535,4672.0,3,Normal
+2024,Udupi,4535,5261.0,16,Normal
+2025,Udupi,4535,5428.0,20,Excess
+2021,Uttara Kannada,2936,3346.0,14,Normal
+2022,Uttara Kannada,2936,2981.0,2,Normal
+2024,Uttara Kannada,2936,3914.0,33,Excess
+2025,Uttara Kannada,2936,3408.0,16,Normal
+2021,Vijayanagar,643,772.0,20,Excess
+2022,Vijayanagar,643,927.0,44,Excess
+2024,Vijayanagar,643,764.0,19,Normal
+2025,Vijayanagar,643,591.0,-8,Normal
+2021,Vijayapura,591,587.0,-1,Normal
+2022,Vijayapura,591,760.0,29,Excess
+2024,Vijayapura,591,622.0,5,Normal
+2025,Vijayapura,591,871.0,47,Excess
+2021,Yadgir,719,669.0,-7,Normal
+2022,Yadgir,719,933.0,30,Excess
+2024,Yadgir,719,736.0,2,Normal
+2025,Yadgir,719,953.0,33,Excess
