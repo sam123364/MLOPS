@@ -3,19 +3,19 @@
 ## Current Status: Phase 1 (Data Acquisition & Ingestion)
 
 ### Accomplished in this session:
-1. **KSNDMC Rainfall Data Consolidation:**
-   - Ingested multi-year Karnataka rainfall records provided by user (covering 2021, 2022, 2024, and 2025).
-   - Cleaned duplicate copy files from `data/raw/ksndmc/`.
-   - Processed and merged all tables into a unified master Excel file:
-     [`data/raw/rainfall/ksndmc/karnataka_rainfall_master.xlsx`](file:///C:/Users/user/Desktop/MLOPS/data/raw/rainfall/ksndmc/karnataka_rainfall_master.xlsx)
-   - Built a **`District_MultiYear_Summary`** sheet comparing District rainfall across 2021, 2022, 2024, and 2025.
-   - Structured year-by-year sheets:
-     - `2025_District_Seasonal`
-     - `2024_District_Seasonal`
-     - `2024_Hobli_Taluk_Annual` (1,122 rows covering all Hoblis/Taluks)
-     - `2022_District_Annual`
-     - `2021_District_Annual`
-     - `2021_Hobli_Taluk_Seasonal` (1,134 rows covering all Hoblis/Taluks with seasonal splits)
+1. **KSNDMC Rainfall Data Consolidation & Cleaning:**
+   - Ingested multi-year Karnataka rainfall records provided by user (2021, 2022, 2024, 2025).
+   - Produced standardized, cleanly attributed CSV files in `data/processed/rainfall/`:
+     - `karnataka_district_annual_rainfall_2021_2025_long.csv`: 124 rows of long-format annual history.
+     - `karnataka_district_annual_rainfall_comparison_wide.csv`: 31 rows comparing all districts across years.
+     - `karnataka_district_seasonal_rainfall_2021_2025.csv`: 92 rows of Pre-Monsoon, SWM, NEM breakdowns.
+     - `karnataka_hobli_rainfall_2021_clean.csv`: 1,134 rows with forward-filled District & Taluk links.
+     - `karnataka_hobli_rainfall_2024_clean.csv`: 1,122 rows with forward-filled District & Taluk links.
+   - Generated clean master Excel workbook: [`data/processed/rainfall/karnataka_rainfall_master_clean.xlsx`](file:///C:/Users/user/Desktop/MLOPS/data/processed/rainfall/karnataka_rainfall_master_clean.xlsx)
+2. **Formal Schemas & Validation:**
+   - Authored formal schema contract: [`configs/rainfall_schemas.yaml`](file:///C:/Users/user/Desktop/MLOPS/configs/rainfall_schemas.yaml) with units, types, nullability, ranges, and IMD categories.
+   - Built validation engine in [`src/utils/schemas.py`](file:///C:/Users/user/Desktop/MLOPS/src/utils/schemas.py).
+   - Added unit test suite [`tests/unit/test_rainfall_schemas.py`](file:///C:/Users/user/Desktop/MLOPS/tests/unit/test_rainfall_schemas.py) (all 40 tests passing).
 
 ### Next Steps:
 1. Add CartoDEM GeoTIFF to `data/raw/dem/cartodem/`.

@@ -1,0 +1,263 @@
+# =====================================================================
+# KSNDMC / Karnataka Rainfall Dataset Schemas
+# Formal Data Contract for Parent Yearly & Hobli Rainfall Datasets
+# =====================================================================
+
+version: "1.0.0"
+
+# ---------------------------------------------------------------------
+# 1. Parent Yearly District Rainfall (Long Format)
+# File: data/processed/rainfall/karnataka_district_annual_rainfall_2021_2025_long.csv
+# ---------------------------------------------------------------------
+district_annual_long_schema:
+  name: "District Annual Rainfall History (Long Format)"
+  description: "Annual rainfall observations for all 31 districts across Karnataka (2021-2025)."
+  primary_key: ["district_name", "year"]
+  columns:
+    year:
+      type: "integer"
+      description: "Observation calendar year (e.g., 2021, 2022, 2024, 2025)"
+      nullable: false
+      range: [2000, 2030]
+
+    district_name:
+      type: "string"
+      description: "Standardized Karnataka district name (Title Case)"
+      nullable: false
+      example: "Kolar"
+
+    annual_normal_mm:
+      type: "float"
+      unit: "mm"
+      description: "Long-term climatological normal annual rainfall"
+      nullable: false
+      range: [300.0, 6000.0]
+
+    annual_actual_mm:
+      type: "float"
+      unit: "mm"
+      description: "Actual observed total rainfall during the year"
+      nullable: false
+      range: [100.0, 9000.0]
+
+    annual_dep_pct:
+      type: "float"
+      unit: "percentage"
+      description: "Percentage departure from normal ((Actual - Normal) / Normal * 100)"
+      nullable: false
+      range: [-100.0, 500.0]
+
+    classification:
+      type: "string"
+      description: "IMD standard rainfall departure classification category"
+      nullable: false
+      allowed_values:
+        - "Large Excess"      # >= +60%
+        - "Excess"            # +20% to +59%
+        - "Normal"            # -19% to +19%
+        - "Deficient"         # -20% to -59%
+        - "Large Deficient"   # -60% to -99%
+        - "No Rain"           # -100%
+
+
+# ---------------------------------------------------------------------
+# 2. Parent Yearly District Rainfall (Wide Format Comparison)
+# File: data/processed/rainfall/karnataka_district_annual_rainfall_comparison_wide.csv
+# ---------------------------------------------------------------------
+district_annual_wide_schema:
+  name: "District Annual Rainfall Comparison (Wide Format)"
+  description: "Side-by-side multi-year rainfall matrix for comparative analytics and model backtesting."
+  primary_key: ["district_name"]
+  columns:
+    district_name:
+      type: "string"
+      description: "Standardized district name"
+      nullable: false
+
+    normal_rainfall_mm:
+      type: "float"
+      unit: "mm"
+      description: "Annual normal rainfall benchmark"
+      nullable: false
+
+    actual_rainfall_mm_2021:
+      type: "float"
+      unit: "mm"
+      nullable: true
+
+    actual_rainfall_mm_2022:
+      type: "float"
+      unit: "mm"
+      nullable: true
+
+    actual_rainfall_mm_2024:
+      type: "float"
+      unit: "mm"
+      nullable: true
+
+    actual_rainfall_mm_2025:
+      type: "float"
+      unit: "mm"
+      nullable: true
+
+    departure_pct_2021:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+    departure_pct_2022:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+    departure_pct_2024:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+    departure_pct_2025:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+
+# ---------------------------------------------------------------------
+# 3. Parent Yearly District Seasonal Breakdown
+# File: data/processed/rainfall/karnataka_district_seasonal_rainfall_2021_2025.csv
+# ---------------------------------------------------------------------
+district_seasonal_schema:
+  name: "District Seasonal Rainfall Breakdown"
+  description: "Seasonal splits (Pre-Monsoon Mar-May, Southwest Monsoon Jun-Sep, Northeast Monsoon Oct-Dec) by district."
+  primary_key: ["district_name", "year"]
+  columns:
+    year:
+      type: "integer"
+      nullable: false
+
+    district_name:
+      type: "string"
+      nullable: false
+
+    pre_monsoon_normal_mm:
+      type: "float"
+      unit: "mm"
+      description: "Pre-Monsoon (Summer) normal rainfall (March - May)"
+      nullable: true
+
+    pre_monsoon_actual_mm:
+      type: "float"
+      unit: "mm"
+      description: "Pre-Monsoon actual observed rainfall"
+      nullable: true
+
+    pre_monsoon_dep_pct:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+    swm_normal_mm:
+      type: "float"
+      unit: "mm"
+      description: "Southwest Monsoon (Kharif) normal rainfall (June - September)"
+      nullable: true
+
+    swm_actual_mm:
+      type: "float"
+      unit: "mm"
+      description: "Southwest Monsoon actual observed rainfall"
+      nullable: true
+
+    swm_dep_pct:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+    nem_normal_mm:
+      type: "float"
+      unit: "mm"
+      description: "Northeast Monsoon (Rabi) normal rainfall (October - December)"
+      nullable: true
+
+    nem_actual_mm:
+      type: "float"
+      unit: "mm"
+      description: "Northeast Monsoon actual observed rainfall"
+      nullable: true
+
+    nem_dep_pct:
+      type: "float"
+      unit: "percentage"
+      nullable: true
+
+    annual_normal_mm:
+      type: "float"
+      unit: "mm"
+      nullable: false
+
+    annual_actual_mm:
+      type: "float"
+      unit: "mm"
+      nullable: false
+
+    annual_dep_pct:
+      type: "float"
+      unit: "percentage"
+      nullable: false
+
+    classification:
+      type: "string"
+      nullable: false
+
+
+# ---------------------------------------------------------------------
+# 4. Hobli / Taluk Granular Rainfall
+# Files:
+#   - data/processed/rainfall/karnataka_hobli_rainfall_2021_clean.csv
+#   - data/processed/rainfall/karnataka_hobli_rainfall_2024_clean.csv
+# ---------------------------------------------------------------------
+hobli_rainfall_schema:
+  name: "Sub-District (Hobli & Taluk) Granular Rainfall"
+  description: "Hyper-local rainfall observations across Karnataka's 850+ hoblis and 220+ taluks with parent district linkage."
+  columns:
+    year:
+      type: "integer"
+      nullable: false
+
+    admin_level:
+      type: "string"
+      description: "Administrative hierarchy tier"
+      allowed_values: ["DISTRICT", "TALUK", "HOBLI", "REGION"]
+
+    district_name:
+      type: "string"
+      description: "Parent district name"
+      nullable: true
+
+    taluk_name:
+      type: "string"
+      description: "Parent taluk name (null for district rows)"
+      nullable: true
+
+    location_name:
+      type: "string"
+      description: "Name of the hobli, taluk, or district"
+      nullable: false
+
+    annual_normal_mm:
+      type: "float"
+      unit: "mm"
+      nullable: false
+
+    annual_actual_mm:
+      type: "float"
+      unit: "mm"
+      nullable: false
+
+    annual_dep_pct:
+      type: "float"
+      unit: "percentage"
+      nullable: false
+
+    annual_classification:
+      type: "string"
+      nullable: false
