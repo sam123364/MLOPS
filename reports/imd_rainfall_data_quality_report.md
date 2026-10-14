@@ -42,22 +42,22 @@ All 3,650,080 spatial-temporal data points were audited:
 ## 3. Geographic Filtering & Boundary Status (Phase 2)
 
 > [!WARNING]
-> **Boundary File Status: Official Boundary Unavailable (Provisional AOI Used)**
-> An official Survey of India / KGIS administrative GeoJSON or shapefile is currently **not present in the repository**. Filtering was performed using approximate WGS84 bounding polygons defined in [`configs/study_area.yaml`](file:///C:/Users/user/Desktop/MLOPS/configs/study_area.yaml).
+> **Boundary File Status: Approximate Combined AOI GeoJSON Integrated (NOT Official District Boundaries)**
+> An approximate boundary file was provided at [`data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson`](file:///C:/Users/user/Desktop/MLOPS/data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson).
+> - **GeoJSON Type:** `FeatureCollection` containing a single `Polygon` (5 vertices forming a rectangular bounding envelope: `Lon: [76.70°, 78.95°]`, `Lat: [12.40°, 14.25°]`).
+> - **Embedded Property Note:** *"Approximate bounding polygon only; not official district boundaries. It includes surrounding areas. Use for rough IMD grid selection, then spatially filter with official boundaries for analysis."*
+> - **Crucial Limitation:** This GeoJSON does **not** delineate individual district borders between Kolar, Chikkaballapur, and Tumakuru. It was used strictly as a provisional study-area filter. All district aggregates retain `provisional_flag = true`.
 
-### Intersecting IMD Grid Cells (0.25° resolution):
-1. **Kolar District** (BBox: W: 77.70°, S: 12.90°, E: 78.60°, N: 13.90°):
-   - **Grid Cell Count:** 16 cells
-   - Latitudes: `13.00, 13.25, 13.50, 13.75`
-   - Longitudes: `77.75, 78.00, 78.25, 78.50`
-2. **Chikkaballapur District** (BBox: W: 77.55°, S: 13.20°, E: 78.20°, N: 13.90°):
-   - **Grid Cell Count:** 6 cells
-   - Latitudes: `13.25, 13.50, 13.75`
-   - Longitudes: `77.75, 78.00`
-3. **Tumakuru District** (BBox: W: 76.60°, S: 12.90°, E: 77.60°, N: 14.10°):
-   - **Grid Cell Count:** 20 cells
-   - Latitudes: `13.00, 13.25, 13.50, 13.75, 14.00`
-   - Longitudes: `76.75, 77.00, 77.25, 77.50`
+### Selected IMD Grid Cells (0.25° resolution):
+1. **Total Selected by Study-Area GeoJSON Polygon:** **72 cells** (out of 80 raw cells).
+   - Only 8 cells at longitude 79.00° fall outside the eastern extent (78.95°).
+   - All 72 cells are preserved in `data/processed/imd_rainfall_daily_grid.parquet`.
+
+2. **District-Level Provisional Subsets (from Bounding Boxes within AOI):**
+   - **Kolar District** (BBox: W: 77.70°, S: 12.90°, E: 78.60°, N: 13.90°): **16 cells**
+   - **Chikkaballapur District** (BBox: W: 77.55°, S: 13.20°, E: 78.20°, N: 13.90°): **6 cells**
+   - **Tumakuru District** (BBox: W: 76.60°, S: 12.90°, E: 77.60°, N: 14.10°): **20 cells**
+   - **Union of District BBoxes:** 36 unique cells (6 cells overlap between Kolar and Chikkaballapur).
 
 **Total Unique Selected Grid Cells:** 36 cells across the three target districts.
 

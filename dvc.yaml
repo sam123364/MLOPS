@@ -5,6 +5,7 @@ stages:
     cmd: >
       python -m src.data.process_imd_rainfall
       --input imdweb_nSbYRBgK.nc
+      --geojson data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson
       --config configs/study_area.yaml
       --output-dir data/processed
       --metadata-dir data/metadata
@@ -12,6 +13,7 @@ stages:
       --dry-threshold 2.5
     deps:
       - imdweb_nSbYRBgK.nc
+      - data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson
       - src/data/process_imd_rainfall.py
       - configs/study_area.yaml
     outs:

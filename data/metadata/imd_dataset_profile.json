@@ -1,7 +1,7 @@
 {
   "dataset_name": "IMD High-Resolution Daily Gridded Rainfall",
   "source_file": "imdweb_nSbYRBgK.nc",
-  "processing_timestamp_utc": "2026-10-14T11:48:35.095281+00:00",
+  "processing_timestamp_utc": "2026-10-14T12:01:08.718105+00:00",
   "time_coverage": {
     "start_date": "1901-01-31",
     "end_date": "2025-12-31",
@@ -23,10 +23,23 @@
     "total_raw_grid_cells": 80
   },
   "geographic_filtering": {
-    "method": "Provisional Bounding Box Polygon Intersection",
-    "boundary_file_status": "EXACT_OFFICIAL_BOUNDARY_UNAVAILABLE",
-    "notes": "Filtered using approximate WGS84 bounding boxes from configs/study_area.yaml. District boundaries overlap in the rectangular AOI; this is marked as provisional pending exact official Survey of India / KGIS GeoJSON boundary verification.",
-    "selected_unique_grid_cells_count": 36,
+    "method": "Provisional Study-Area AOI GeoJSON Polygon Filter + BBox Mapping",
+    "boundary_file": "data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson",
+    "boundary_type": "Approximate Combined Bounding Polygon",
+    "is_official_district_boundary": false,
+    "official_boundaries_status": "BLOCKED_BY_LACK_OF_OFFICIAL_DISTRICT_BOUNDARIES",
+    "geojson_properties": {
+      "name": "Approximate AOI - Tumakuru, Chikkaballapur, Kolar",
+      "note": "Approximate bounding polygon only; not official district boundaries. It includes surrounding areas. Use for rough IMD grid selection, then spatially filter with official boundaries for analysis."
+    },
+    "geojson_notes": "Approximate bounding polygon only; not official district boundaries. It includes surrounding areas. Use for rough IMD grid selection, then spatially filter with official boundaries for analysis.",
+    "geojson_aoi_bbox": {
+      "west": 76.7,
+      "east": 78.95,
+      "south": 12.4,
+      "north": 14.25
+    },
+    "geojson_selected_grid_cells_count": 72,
     "district_grid_cell_counts": {
       "Kolar": 16,
       "Chikkaballapur": 6,
@@ -207,16 +220,17 @@
           77.5
         ]
       ]
-    }
+    },
+    "limitations": "The GeoJSON file is an approximate combined bounding polygon covering the general region, NOT official individual district boundaries. It cannot be used to distinguish Kolar, Chikkaballapur, and Tumakuru individually or compute exact area-weighted district estimates. Exact district-level estimates remain BLOCKED until official Survey of India / KGIS district boundary GeoJSON polygons are provided."
   },
   "data_quality_metrics": {
-    "total_grid_daily_records": 1642536,
+    "total_grid_daily_records": 3285072,
     "missing_values_count": 0,
     "missing_values_pct": 0.0,
     "negative_values_count": 0,
     "min_rainfall_mm": 0.0,
-    "max_rainfall_mm": 253.1999969482422,
-    "mean_rainfall_mm": 1.9515,
+    "max_rainfall_mm": 289.894287109375,
+    "mean_rainfall_mm": 2.0122,
     "original_units": "mm/day"
   },
   "processed_artifacts": {
@@ -232,6 +246,6 @@
       8,
       9
     ],
-    "district_aggregation": "simple_unweighted_arithmetic_mean"
+    "district_aggregation": "provisional_unweighted_mean"
   }
 }

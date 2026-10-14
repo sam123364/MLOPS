@@ -20,6 +20,8 @@ from src.data.process_imd_rainfall import (
     calculate_longest_dry_spell,
     load_study_area_bboxes,
     map_grid_cells_to_districts,
+    load_provisional_aoi_geojson,
+    is_point_in_aoi_polygon,
 )
 
 
@@ -54,6 +56,31 @@ def test_dry_spell_missing_values_break_run():
     assert missing == 1
 
 
+def test_provisional_aoi_geojson_loading():
+    p = Path("data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson")
+    assert p.exists(), f"GeoJSON file missing at {p}"
+    aoi_info = load_provisional_aoi_geojson(p)
+    assert aoi_info["geometry_type"] == "Polygon"
+    assert aoi_info["is_official_district_boundary"] == False
+    assert "not official district boundaries" in aoi_info["note"].lower()
+    assert aoi_info["bbox"]["west"] == 76.7
+    assert aoi_info["bbox"]["east"] == 78.95
+    assert aoi_info["bbox"]["south"] == 12.4
+    assert aoi_info["bbox"]["north"] == 14.25
+
+
+def test_point_in_aoi_polygon():
+    p = Path("data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson")
+    aoi_info = load_provisional_aoi_geojson(p)
+    # Point inside Kolar (13.13, 78.13)
+    assert is_point_in_aoi_polygon(13.13, 78.13, aoi_info) == True
+    # Point inside Tumakuru (13.34, 77.10)
+    assert is_point_in_aoi_polygon(13.34, 77.10, aoi_info) == True
+    # Point outside bounds (e.g. lon 79.00 is beyond 78.95)
+    assert is_point_in_aoi_polygon(12.50, 79.00, aoi_info) == False
+    assert is_point_in_aoi_polygon(15.00, 75.00, aoi_info) == False
+
+
 def test_study_area_bboxes_loaded():
     config_path = Path("configs/study_area.yaml")
     assert config_path.exists()
@@ -63,12 +90,15 @@ def test_study_area_bboxes_loaded():
     assert "Tumakuru" in bboxes
 
 
-def test_grid_cell_mapping():
+def test_grid_cell_mapping_with_geojson():
     config_path = Path("configs/study_area.yaml")
     bboxes = load_study_area_bboxes(config_path)
+    geojson_path = Path("data/raw/boundaries/approx_kolar_chikkaballapur_tumakuru_aoi.geojson")
+    aoi_info = load_provisional_aoi_geojson(geojson_path)
+
     lats = np.array([12.5, 12.75, 13.0, 13.25, 13.5, 13.75, 14.0, 14.25])
     lons = np.array([76.75, 77.0, 77.25, 77.5, 77.75, 78.0, 78.25, 78.5, 78.75, 79.0])
-    mapping = map_grid_cells_to_districts(lats, lons, bboxes)
+    mapping = map_grid_cells_to_districts(lats, lons, bboxes, aoi_info)
 
     assert len(mapping["Kolar"]) == 16
     assert len(mapping["Chikkaballapur"]) == 6
@@ -81,7 +111,8 @@ def test_processed_daily_grid_parquet():
     df = pd.read_parquet(p)
     expected_cols = {"date", "latitude", "longitude", "rainfall_mm"}
     assert expected_cols.issubset(df.columns)
-    assert len(df) == 1642536
+    # 72 cells selected by GeoJSON AOI * 45626 days = 3,285,072
+    assert len(df) == 3285072
     # Plausibility
     assert (df["rainfall_mm"] >= 0).all(), "Rainfall must be non-negative"
     assert (df["rainfall_mm"] <= 500).all(), "Rainfall above 500 mm/day is unphysical for Kolar"
@@ -123,11 +154,11 @@ def test_processed_monsoon_features_parquet():
     }
     assert expected_cols.issubset(df.columns)
     assert len(df) == 375  # 3 districts * 125 years (1901-2025)
-    # Total monsoon days (June to September) must be exactly 122 days for every record
     assert (df["total_monsoon_days"] == 122).all()
     assert (df["missing_days_count"] == 0).all()
     assert (df["longest_dry_spell_days"] >= 0).all()
     assert (df["longest_dry_spell_days"] <= 122).all()
+    assert df["provisional_flag"].all() == True
 
 
 def test_metadata_profile_json():
@@ -139,4 +170,6 @@ def test_metadata_profile_json():
     assert meta["time_coverage"]["start_date"] == "1901-01-31"
     assert meta["time_coverage"]["end_date"] == "2025-12-31"
     assert meta["time_coverage"]["continuous_daily_flag"] == True
-    assert meta["geographic_filtering"]["boundary_file_status"] == "EXACT_OFFICIAL_BOUNDARY_UNAVAILABLE"
+    assert meta["geographic_filtering"]["is_official_district_boundary"] == False
+    assert meta["geographic_filtering"]["geojson_selected_grid_cells_count"] == 72
+    assert "not official" in meta["geographic_filtering"]["limitations"].lower()

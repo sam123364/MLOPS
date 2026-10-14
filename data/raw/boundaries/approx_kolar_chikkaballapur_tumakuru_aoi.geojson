@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "name": "approximate_kolar_chikkaballapur_tumakuru_aoi",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Approximate AOI - Tumakuru, Chikkaballapur, Kolar",
+        "note": "Approximate bounding polygon only; not official district boundaries. It includes surrounding areas. Use for rough IMD grid selection, then spatially filter with official boundaries for analysis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.7,
+              12.4
+            ],
+            [
+              78.95,
+              12.4
+            ],
+            [
+              78.95,
+              14.25
+            ],
+            [
+              76.7,
+              14.25
+            ],
+            [
+              76.7,
+              12.4
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
