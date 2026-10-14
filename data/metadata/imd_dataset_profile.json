@@ -1,0 +1,237 @@
+{
+  "dataset_name": "IMD High-Resolution Daily Gridded Rainfall",
+  "source_file": "imdweb_nSbYRBgK.nc",
+  "processing_timestamp_utc": "2026-10-14T11:48:35.095281+00:00",
+  "time_coverage": {
+    "start_date": "1901-01-31",
+    "end_date": "2025-12-31",
+    "total_days": 45626,
+    "continuous_daily_flag": true,
+    "duplicate_dates_flag": false
+  },
+  "spatial_coverage_raw": {
+    "latitude_bounds": [
+      12.5,
+      14.25
+    ],
+    "longitude_bounds": [
+      76.75,
+      79.0
+    ],
+    "lat_step_deg": 0.25,
+    "lon_step_deg": 0.25,
+    "total_raw_grid_cells": 80
+  },
+  "geographic_filtering": {
+    "method": "Provisional Bounding Box Polygon Intersection",
+    "boundary_file_status": "EXACT_OFFICIAL_BOUNDARY_UNAVAILABLE",
+    "notes": "Filtered using approximate WGS84 bounding boxes from configs/study_area.yaml. District boundaries overlap in the rectangular AOI; this is marked as provisional pending exact official Survey of India / KGIS GeoJSON boundary verification.",
+    "selected_unique_grid_cells_count": 36,
+    "district_grid_cell_counts": {
+      "Kolar": 16,
+      "Chikkaballapur": 6,
+      "Tumakuru": 20
+    },
+    "district_grid_cells": {
+      "Kolar": [
+        [
+          13.0,
+          77.75
+        ],
+        [
+          13.0,
+          78.0
+        ],
+        [
+          13.0,
+          78.25
+        ],
+        [
+          13.0,
+          78.5
+        ],
+        [
+          13.25,
+          77.75
+        ],
+        [
+          13.25,
+          78.0
+        ],
+        [
+          13.25,
+          78.25
+        ],
+        [
+          13.25,
+          78.5
+        ],
+        [
+          13.5,
+          77.75
+        ],
+        [
+          13.5,
+          78.0
+        ],
+        [
+          13.5,
+          78.25
+        ],
+        [
+          13.5,
+          78.5
+        ],
+        [
+          13.75,
+          77.75
+        ],
+        [
+          13.75,
+          78.0
+        ],
+        [
+          13.75,
+          78.25
+        ],
+        [
+          13.75,
+          78.5
+        ]
+      ],
+      "Chikkaballapur": [
+        [
+          13.25,
+          77.75
+        ],
+        [
+          13.25,
+          78.0
+        ],
+        [
+          13.5,
+          77.75
+        ],
+        [
+          13.5,
+          78.0
+        ],
+        [
+          13.75,
+          77.75
+        ],
+        [
+          13.75,
+          78.0
+        ]
+      ],
+      "Tumakuru": [
+        [
+          13.0,
+          76.75
+        ],
+        [
+          13.0,
+          77.0
+        ],
+        [
+          13.0,
+          77.25
+        ],
+        [
+          13.0,
+          77.5
+        ],
+        [
+          13.25,
+          76.75
+        ],
+        [
+          13.25,
+          77.0
+        ],
+        [
+          13.25,
+          77.25
+        ],
+        [
+          13.25,
+          77.5
+        ],
+        [
+          13.5,
+          76.75
+        ],
+        [
+          13.5,
+          77.0
+        ],
+        [
+          13.5,
+          77.25
+        ],
+        [
+          13.5,
+          77.5
+        ],
+        [
+          13.75,
+          76.75
+        ],
+        [
+          13.75,
+          77.0
+        ],
+        [
+          13.75,
+          77.25
+        ],
+        [
+          13.75,
+          77.5
+        ],
+        [
+          14.0,
+          76.75
+        ],
+        [
+          14.0,
+          77.0
+        ],
+        [
+          14.0,
+          77.25
+        ],
+        [
+          14.0,
+          77.5
+        ]
+      ]
+    }
+  },
+  "data_quality_metrics": {
+    "total_grid_daily_records": 1642536,
+    "missing_values_count": 0,
+    "missing_values_pct": 0.0,
+    "negative_values_count": 0,
+    "min_rainfall_mm": 0.0,
+    "max_rainfall_mm": 253.1999969482422,
+    "mean_rainfall_mm": 1.9515,
+    "original_units": "mm/day"
+  },
+  "processed_artifacts": {
+    "daily_grid_parquet": "data/processed/imd_rainfall_daily_grid.parquet",
+    "daily_district_parquet": "data/processed/imd_rainfall_daily_district.parquet",
+    "monsoon_features_parquet": "data/processed/imd_monsoon_features.parquet"
+  },
+  "parameters": {
+    "dry_day_threshold_mm": 2.5,
+    "monsoon_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "district_aggregation": "simple_unweighted_arithmetic_mean"
+  }
+}

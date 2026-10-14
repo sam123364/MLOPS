@@ -1,5 +1,38 @@
 stages:
 
+  # ── Stage 0: Process IMD NetCDF Gridded Rainfall ────────────────────────────
+  process_imd_rainfall:
+    cmd: >
+      python -m src.data.process_imd_rainfall
+      --input imdweb_nSbYRBgK.nc
+      --config configs/study_area.yaml
+      --output-dir data/processed
+      --metadata-dir data/metadata
+      --figures-dir reports/figures
+      --dry-threshold 2.5
+    deps:
+      - imdweb_nSbYRBgK.nc
+      - src/data/process_imd_rainfall.py
+      - configs/study_area.yaml
+    outs:
+      - data/processed/imd_rainfall_daily_grid.parquet:
+          cache: true
+      - data/processed/imd_rainfall_daily_district.parquet:
+          cache: true
+      - data/processed/imd_monsoon_features.parquet:
+          cache: true
+      - data/metadata/imd_dataset_profile.json:
+          cache: false
+      - reports/figures/annual_rainfall_trends.png:
+          cache: false
+      - reports/figures/monsoon_rainfall_distribution.png:
+          cache: false
+      - reports/figures/longest_dry_spell_distribution.png:
+          cache: false
+      - reports/figures/missing_data_profile.png:
+          cache: false
+    desc: "Inspect, geographically filter, and extract daily and monsoon dry-spell features from raw IMD NetCDF."
+
   # ── Stage 1: Ingest IMD Rainfall ────────────────────────────────────────────
   ingest_imd:
     cmd: >
