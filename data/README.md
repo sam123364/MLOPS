@@ -55,13 +55,13 @@ All files here are strictly preserved in their original state. **Never edit raw 
 ### 2.2 `data/processed/` — Curated Analysis-Ready Datasets
 These are the files that downstream teammates (**Workstream C: Features** and **Workstream D: Modeling**) should consume.
 
-| File Path | Format | Records | Purpose |
+| File Path | Format | Records | Purpose & Key Features |
 |---|---|---|---|
 | [`imd_rainfall_daily_grid.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_rainfall_daily_grid.parquet) | Parquet | 3,285,072 | **PRIMARY MODELING DATASET:** 72 IMD grid cells $\times$ 45,626 days (`rainfall_mm`). |
-| [`imd_rainfall_daily_district_official.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_rainfall_daily_district_official.parquet) | Parquet | 136,878 | **OFFICIAL DISTRICT DAILY:** Area-weighted daily rainfall using official polygon boundaries (`provisional_flag = false`). |
-| [`imd_monsoon_features_official.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_monsoon_features_official.parquet) | Parquet | 375 | **SEASONAL BASELINE TARGETS:** 125 years of June–Sept totals and dry spells at 2.5 mm threshold. |
-| [`imd_rainfall_daily_district.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_rainfall_daily_district.parquet) | Parquet | 136,878 | Bounding-box daily averages (retained for comparison). |
-| [`imd_monsoon_features.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_monsoon_features.parquet) | Parquet | 375 | Bounding-box seasonal features (retained for comparison). |
+| [`imd_rainfall_daily_district_official.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_rainfall_daily_district_official.parquet) | Parquet | 136,878 | **OFFICIAL DISTRICT DAILY (14 cols):** Area-weighted daily rainfall with antecedent $P_5$, dynamic AMC classes (`AMC-I/II/III`), and rainy/heavy event flags. |
+| [`imd_monsoon_features_official.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_monsoon_features_official.parquet) | Parquet | 375 | **SEASONAL TARGETS & EXTREMES (18 cols):** 125 years of SWM totals, longest dry spells, peak 1-day/3-day storms, heavy rain days ($\ge 25\text{mm}$, $\ge 50\text{mm}$), NEM totals, and PCI. *(See `reports/feature_engineering_log.md`)* |
+| [`imd_rainfall_daily_district.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_rainfall_daily_district.parquet) | Parquet | 136,878 | Bounding-box daily averages with $P_5$, AMC, and threshold flags (retained baseline). |
+| [`imd_monsoon_features.parquet`](file:///C:/Users/user/Desktop/MLOPS/data/processed/imd_monsoon_features.parquet) | Parquet | 375 | Bounding-box seasonal features with peak storm metrics and PCI (retained baseline). |
 | [`ksndmc_flagged_records.csv`](file:///C:/Users/user/Desktop/MLOPS/data/processed/ksndmc_flagged_records.csv) | CSV | 22 | Data quality issue register (19 shifted districts, unit mislabels, boundary shifts). |
 
 - **`data/processed/rainfall/`** (Clean KSNDMC Tables):
