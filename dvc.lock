@@ -1,0 +1,36 @@
+schema: '2.0'
+stages:
+  baseline_rainfall_models:
+    cmd: "python -m src.models.baseline_rainfall --monsoon-data data/processed/imd_monsoon_features_official.parquet\
+      \ --daily-data data/processed/imd_rainfall_daily_district_official.parquet --config\
+      \ configs/params.yaml --output-dir data/processed --reports-dir reports\n"
+    deps:
+    - path: configs/params.yaml
+      hash: md5
+      md5: 4fcb23051b845a69c0f8a5d28c44b962
+      size: 6222
+    - path: data/processed/imd_monsoon_features_official.parquet
+      hash: md5
+      md5: bc9a55916ccd1fecef7358c126eaab6b
+      size: 23566
+    - path: data/processed/imd_rainfall_daily_district_official.parquet
+      hash: md5
+      md5: 2af2e47651611312d18b354df791d67b
+      size: 1628802
+    - path: src/models/baseline_rainfall.py
+      hash: md5
+      md5: 4e2986e08fa02e48394d7d544ec6fcb1
+      size: 14784
+    outs:
+    - path: data/processed/rainfall_baseline_predictions.csv
+      hash: md5
+      md5: 0d5f81a9c39c819f8ab132e6eb188d28
+      size: 5433
+    - path: reports/rainfall_baseline_evaluation.csv
+      hash: md5
+      md5: f396e29f633bdb87f6ff1291de102e72
+      size: 1892
+    - path: reports/rainfall_baseline_metrics.json
+      hash: md5
+      md5: ce1cd9b375d1047d590cf25773ce73b5
+      size: 4899

@@ -1,0 +1,134 @@
+{
+  "target_next_year_swm_mm": {
+    "target_label": "Primary: Next-Year SWM (mm)",
+    "evaluation_note": "Evaluated on held-out test years 2020-2025 (n = 18 district-year observations). Feature year 1901 has incomplete January coverage (Jan 1-30 missing in raw IMD) but does not contaminate test years.",
+    "test_sample_size": 18,
+    "train_sample_size": 354,
+    "empirical_historical_bounds": {
+      "description": "Observed coverage of held-out test observations falling within historical 10th-90th percentiles. Not calibrated prediction intervals.",
+      "nominal_percentile_range": "10th - 90th percentile (80% nominal)",
+      "observed_test_in_bounds_count": 11,
+      "observed_test_coverage_pct": 61.11
+    },
+    "models": {
+      "Climatology Baseline": {
+        "mae_mm": 168.816,
+        "rmse_mm": 215.225,
+        "r2": -1.2959,
+        "skill_score_vs_climatology": 0.0
+      },
+      "Persistence Baseline": {
+        "mae_mm": 175.278,
+        "rmse_mm": 217.484,
+        "r2": -1.3443,
+        "skill_score_vs_climatology": -0.0383
+      },
+      "Linear Regression (Ridge)": {
+        "mae_mm": 185.886,
+        "rmse_mm": 236.845,
+        "r2": -1.7803,
+        "skill_score_vs_climatology": -0.1011
+      },
+      "Random Forest Regressor": {
+        "mae_mm": 167.115,
+        "rmse_mm": 219.816,
+        "r2": -1.3949,
+        "skill_score_vs_climatology": 0.0101
+      },
+      "Empirical Median (Q50)": {
+        "mae_mm": 177.9,
+        "rmse_mm": 222.545,
+        "r2": -1.4547,
+        "skill_score_vs_climatology": -0.0538
+      }
+    }
+  },
+  "target_next_year_longest_dry_spell_days": {
+    "target_label": "Primary: Next-Year Longest Dry Spell (days)",
+    "evaluation_note": "Evaluated on held-out test years 2020-2025 (n = 18 district-year observations). Feature year 1901 has incomplete January coverage (Jan 1-30 missing in raw IMD) but does not contaminate test years.",
+    "test_sample_size": 18,
+    "train_sample_size": 354,
+    "empirical_historical_bounds": {
+      "description": "Observed coverage of held-out test observations falling within historical 10th-90th percentiles. Not calibrated prediction intervals.",
+      "nominal_percentile_range": "10th - 90th percentile (80% nominal)",
+      "observed_test_in_bounds_count": 12,
+      "observed_test_coverage_pct": 66.67
+    },
+    "models": {
+      "Climatology Baseline": {
+        "mae_mm": 7.964,
+        "rmse_mm": 8.898,
+        "r2": -1.5682,
+        "skill_score_vs_climatology": 0.0
+      },
+      "Persistence Baseline": {
+        "mae_mm": 6.444,
+        "rmse_mm": 7.118,
+        "r2": -0.6434,
+        "skill_score_vs_climatology": 0.1908
+      },
+      "Linear Regression (Ridge)": {
+        "mae_mm": 9.296,
+        "rmse_mm": 10.669,
+        "r2": -2.6922,
+        "skill_score_vs_climatology": -0.1672
+      },
+      "Random Forest Regressor": {
+        "mae_mm": 9.327,
+        "rmse_mm": 10.81,
+        "r2": -2.7906,
+        "skill_score_vs_climatology": -0.1711
+      },
+      "Empirical Median (Q50)": {
+        "mae_mm": 7.389,
+        "rmse_mm": 8.357,
+        "r2": -1.2651,
+        "skill_score_vs_climatology": 0.0722
+      }
+    }
+  },
+  "target_next_year_annual_mm": {
+    "target_label": "Secondary: Next-Year Annual Rainfall (mm)",
+    "evaluation_note": "Evaluated on held-out test years 2020-2025 (n = 18 district-year observations). Feature year 1901 has incomplete January coverage (Jan 1-30 missing in raw IMD) but does not contaminate test years.",
+    "test_sample_size": 18,
+    "train_sample_size": 354,
+    "empirical_historical_bounds": {
+      "description": "Observed coverage of held-out test observations falling within historical 10th-90th percentiles. Not calibrated prediction intervals.",
+      "nominal_percentile_range": "10th - 90th percentile (80% nominal)",
+      "observed_test_in_bounds_count": 7,
+      "observed_test_coverage_pct": 38.89
+    },
+    "models": {
+      "Climatology Baseline": {
+        "mae_mm": 331.564,
+        "rmse_mm": 398.914,
+        "r2": -1.5801,
+        "skill_score_vs_climatology": 0.0
+      },
+      "Persistence Baseline": {
+        "mae_mm": 280.934,
+        "rmse_mm": 335.934,
+        "r2": -0.8298,
+        "skill_score_vs_climatology": 0.1527
+      },
+      "Linear Regression (Ridge)": {
+        "mae_mm": 368.782,
+        "rmse_mm": 453.412,
+        "r2": -2.3333,
+        "skill_score_vs_climatology": -0.1123
+      },
+      "Random Forest Regressor": {
+        "mae_mm": 351.905,
+        "rmse_mm": 430.3,
+        "r2": -2.0021,
+        "skill_score_vs_climatology": -0.0613
+      },
+      "Empirical Median (Q50)": {
+        "mae_mm": 350.619,
+        "rmse_mm": 416.789,
+        "r2": -1.8165,
+        "skill_score_vs_climatology": -0.0575
+      }
+    }
+  }
+}

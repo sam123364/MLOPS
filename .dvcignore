@@ -1,4 +1,4 @@
-/data
+# .dvcignore - directories and files to exclude from DVC tracking
 /tmp
 /scratch
 *.log

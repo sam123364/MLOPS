@@ -1,0 +1,16 @@
+target,target_label,model,mae,rmse,r2,skill_score_vs_climatology
+target_next_year_swm_mm,Primary: Next-Year SWM (mm),Climatology Baseline,168.816,215.225,-1.2959,0.0
+target_next_year_swm_mm,Primary: Next-Year SWM (mm),Persistence Baseline,175.278,217.484,-1.3443,-0.0383
+target_next_year_swm_mm,Primary: Next-Year SWM (mm),Linear Regression (Ridge),185.886,236.845,-1.7803,-0.1011
+target_next_year_swm_mm,Primary: Next-Year SWM (mm),Random Forest Regressor,167.115,219.816,-1.3949,0.0101
+target_next_year_swm_mm,Primary: Next-Year SWM (mm),Empirical Median (Q50),177.9,222.545,-1.4547,-0.0538
+target_next_year_longest_dry_spell_days,Primary: Next-Year Longest Dry Spell (days),Climatology Baseline,7.964,8.898,-1.5682,0.0
+target_next_year_longest_dry_spell_days,Primary: Next-Year Longest Dry Spell (days),Persistence Baseline,6.444,7.118,-0.6434,0.1908
+target_next_year_longest_dry_spell_days,Primary: Next-Year Longest Dry Spell (days),Linear Regression (Ridge),9.296,10.669,-2.6922,-0.1672
+target_next_year_longest_dry_spell_days,Primary: Next-Year Longest Dry Spell (days),Random Forest Regressor,9.327,10.81,-2.7906,-0.1711
+target_next_year_longest_dry_spell_days,Primary: Next-Year Longest Dry Spell (days),Empirical Median (Q50),7.389,8.357,-1.2651,0.0722
+target_next_year_annual_mm,Secondary: Next-Year Annual Rainfall (mm),Climatology Baseline,331.564,398.914,-1.5801,0.0
+target_next_year_annual_mm,Secondary: Next-Year Annual Rainfall (mm),Persistence Baseline,280.934,335.934,-0.8298,0.1527
+target_next_year_annual_mm,Secondary: Next-Year Annual Rainfall (mm),Linear Regression (Ridge),368.782,453.412,-2.3333,-0.1123
+target_next_year_annual_mm,Secondary: Next-Year Annual Rainfall (mm),Random Forest Regressor,351.905,430.3,-2.0021,-0.0613
+target_next_year_annual_mm,Secondary: Next-Year Annual Rainfall (mm),Empirical Median (Q50),350.619,416.789,-1.8165,-0.0575

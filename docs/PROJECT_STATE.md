@@ -68,10 +68,30 @@
      - Confirmed that the 2,176 mm value reported under Kolar in `ka_dist_rainfall_2025.csv` was an artifact of CSV column misalignment where Kolar was mapped to Kodagu's row.
      - **Downstream Safeguard Implemented:** Original raw CSVs remain completely unmodified. Flagged 2025 seasonal rows are programmatically excluded from downstream seasonal model validation (proven by unit tests).
 
-   - **Full Test Suite Status:** 65/65 unit tests passing across all suites (`tests/unit/`).
+   - **Full Test Suite Status:** 68/68 unit tests passing across all suites (`tests/unit/`).
+
+5. **Phase 1 Baseline Rainfall & Dry-Spell Forecasting Workflow:**
+   - **Targets Implemented (`src/models/baseline_rainfall.py`):**
+     - Primary 1: Southwest Monsoon total rainfall (`target_next_year_swm_mm`).
+     - Primary 2: Southwest Monsoon longest dry spell (`target_next_year_longest_dry_spell_days`, threshold < 2.5 mm).
+     - Secondary: Annual total rainfall (`target_next_year_annual_mm`), reproducing teammate's persistence baseline.
+   - **Chronological Split & Sample Sizes:**
+     - Training set: Target years 1902 to 2019 ($n = 354$ district-year observations).
+     - Held-out test set: Target years 2020 to 2025 ($n = 18$ district-year observations, 6 years × 3 districts).
+     - Data note: Feature year 1901 has incomplete January coverage (Jan 1–30 missing in raw IMD), but SWM daily data is 100% complete and does not contaminate held-out test years.
+   - **Baselines Evaluated:**
+     - Climatology (training mean), Persistence ($y_t$), Linear Regression (Ridge on lagged features), and Random Forest.
+     - Secondary target persistence reproduced teammate's values: MAE = 280.93 mm, RMSE = 335.93 mm.
+   - **Empirical Historical Bounds (Nominal 80% Range, 10th–90th Percentiles):**
+     - SWM Rainfall: 11/18 (61.11%) held-out test coverage.
+     - Longest Dry Spell: 12/18 (66.67%) held-out test coverage.
+     - Annual Rainfall: 7/18 (38.89%) held-out test coverage (low due to historically extreme rainfall surplus in 2020–2022).
+     - Explicitly documented as uncalibrated empirical historical bounds, not calibrated prediction intervals.
+   - **DVC Integration:**
+     - Stage `baseline_rainfall_models` added to `dvc.yaml` cleanly decoupled from unacquired DEM/Soil stages.
 
 ### Next Steps & Remaining Work:
-1. Extract Northeast Monsoon (Oct-Dec) features for Kolar and Chikkaballapur from IMD grid.
-2. Build Phase 1 baseline rainfall models (climatology, empirical distribution, persistence, quantile regression) with time-based splits.
+1. Conduct team review of baseline modeling findings and evaluate introducing external macro-climatic indices (ENSO, IOD).
+2. Extract Northeast Monsoon (Oct-Dec) features for Kolar and Chikkaballapur from IMD grid.
 3. Ingest CartoDEM / SRTM elevation data into `data/raw/dem/`.
 4. Ingest SoilGrids texture fractions for SCS Curve Number hydrologic soil group classification.

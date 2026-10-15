@@ -1,3 +1,6 @@
+vars:
+  - configs/params.yaml
+
 stages:
 
   # ── Stage 0: Process IMD NetCDF Gridded Rainfall ────────────────────────────
@@ -102,7 +105,7 @@ stages:
     cmd: >
       python -m src.preprocessing.terrain_analysis
       --dem data/raw/dem/cartodem/kolar_dem.tif
-      --drain-threshold ${params.terrain.drainage_accumulation_threshold}
+      --drain-threshold ${terrain.drainage_accumulation_threshold}
     params:
       - configs/params.yaml:
           - terrain.drainage_accumulation_threshold
@@ -176,9 +179,6 @@ stages:
       - configs/params.yaml
     outs:
       - data/processed/models/random_forest_model.joblib
-    metrics:
-      - reports/metrics.json:
-          cache: false
     desc: "Train RandomForest model with MLflow tracking."
 
   # ── Stage 9: Evaluate ─────────────────────────────────────────────────────────
@@ -202,3 +202,27 @@ stages:
           x: actual_runoff_mm
           y: predicted_runoff_mm
     desc: "Evaluate model, produce predictions and yield estimates."
+
+  # ── Stage 10: Baseline Rainfall Models (Phase 1) ──────────────────────────
+  baseline_rainfall_models:
+    cmd: >
+      python -m src.models.baseline_rainfall
+      --monsoon-data data/processed/imd_monsoon_features_official.parquet
+      --daily-data data/processed/imd_rainfall_daily_district_official.parquet
+      --config configs/params.yaml
+      --output-dir data/processed
+      --reports-dir reports
+    deps:
+      - src/models/baseline_rainfall.py
+      - data/processed/imd_monsoon_features_official.parquet
+      - data/processed/imd_rainfall_daily_district_official.parquet
+      - configs/params.yaml
+    outs:
+      - data/processed/rainfall_baseline_predictions.csv:
+          cache: false
+      - reports/rainfall_baseline_evaluation.csv:
+          cache: false
+    metrics:
+      - reports/rainfall_baseline_metrics.json:
+          cache: false
+    desc: "Evaluate climatology, persistence, linear, and RF baselines for seasonal and annual rainfall."

@@ -175,3 +175,23 @@ model:
   # Cross-validation
   cv_folds: 5
   scoring_metric: "r2"
+
+# ── Baseline Rainfall Forecasting (Phase 1) ─────────────────────────────────
+rainfall_baseline:
+  train_end_year: 2019
+  test_start_year: 2020
+  random_state: 42
+  primary_targets:
+    - "target_next_year_swm_mm"
+    - "target_next_year_longest_dry_spell_days"
+  secondary_targets:
+    - "target_next_year_annual_mm"
+  quantiles:
+    - 0.10
+    - 0.50
+    - 0.90
+  random_forest:
+    n_estimators: 100
+    max_depth: 6
+    min_samples_leaf: 3
+    random_state: 42
