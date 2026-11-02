@@ -90,8 +90,34 @@
    - **DVC Integration:**
      - Stage `baseline_rainfall_models` added to `dvc.yaml` cleanly decoupled from unacquired DEM/Soil stages.
 
+6. **Workstream A/D: Model Registry and Promotion Pipeline Implemented:**
+   - **Production-Ready Registration Script (`src/models/register_model.py`):**
+     - Supports both local SQLite (`sqlite:///mlflow.db`) and DAGsHub remote tracking (`https://dagshub.com/sam123364/mlops_new.mlflow`).
+     - Automated authentication integration via `DAGSHUB_USER_TOKEN` or username/password env vars.
+     - Automatically selects top baseline run from `rainfall_baseline_evaluation` (e.g. `B2_empirical_quantiles`, `B4_quantile_regression`).
+     - Includes automatic seeding from `reports/rainfall_baseline_metrics.json` and `reports/rainfall_baseline_evaluation.csv` for clean isolated test runs.
+     - Registers model as `bengaluru_rainfall_probabilistic_model` with full metadata tags:
+       - `git_commit`: Active git commit SHA.
+       - `dvc_data_version`: Data hash from `dvc.lock`.
+       - `author`: Samiksha / Workstream A & D.
+       - `target_quantiles`: `[0.10, 0.50, 0.90]`.
+       - `methodology`: Probabilistic empirical quantiles and quantile regression.
+     - Automated promotion gate (`promote_to_production`): transitions new models to `Staging`, and enforces production criteria:
+       - Point estimate error: `MAE < 35.0 mm`.
+       - Prediction interval coverage: `80% coverage >= 75.0%`.
+     - Models failing benchmarks remain safely in `Staging` with clear audit warnings.
+   - **Automated CI/CD Workflow (`.github/workflows/model_registry_ci.yml`):**
+     - Runs on PRs and pushes to main/feature branches.
+     - Verifies core dependencies (`mlflow`, `dvc`, `scikit-learn`, `pandas`, `numpy`, `pyyaml`).
+     - Executes model registry unit tests and CLI pipeline.
+   - **Documentation & Governance Guide:**
+     - Created `docs/model_registry_guide.md` covering MLOps registry necessity, lineage tracking, DAGsHub UI inspection steps, and promotion policies.
+   - **Unit Testing Status:**
+     - Added comprehensive unit tests in `tests/unit/test_register_model.py` (3/3 passing, verifying run seeding, staging transition, promotion rejection on benchmark failure, and promotion acceptance on benchmark success).
+
 ### Next Steps & Remaining Work:
 1. Conduct team review of baseline modeling findings and evaluate introducing external macro-climatic indices (ENSO, IOD).
 2. Extract Northeast Monsoon (Oct-Dec) features for Kolar and Chikkaballapur from IMD grid.
 3. Ingest CartoDEM / SRTM elevation data into `data/raw/dem/`.
 4. Ingest SoilGrids texture fractions for SCS Curve Number hydrologic soil group classification.
+
